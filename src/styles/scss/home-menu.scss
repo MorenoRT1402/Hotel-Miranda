@@ -8,22 +8,36 @@
             justify-content: space-between;
             padding: 1rem;
             box-shadow: 1px 1px 10px gray;
+
+            &.--column{
+                box-shadow: none;
+                flex-direction: column;
+
+                &>*{
+                    font-size: 1.1em;
+                    font-weight: bold;
+                    margin: .33em;
+                    text-decoration: none;
+                    color: inherit;
+                }
+            }
         }
 
         &__section {
             display: flex;
             justify-content: space-around;
-            gap: 2rem;
+            gap: 1rem;
             max-width: 50%;
         }
 
         &__title{
             display: flex;
+            gap: .5rem;
 
             &>h3{
                 display: flex;
                 flex-wrap: wrap;
-                align-content: center;
+                font-weight: 500;
             }
         }
     }

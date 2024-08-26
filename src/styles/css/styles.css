@@ -1,3 +1,6 @@
+.--invisible {
+  display: none; }
+
 .home__menu {
   position: fixed;
   width: 100%; }
@@ -6,17 +9,27 @@
     justify-content: space-between;
     padding: 1rem;
     box-shadow: 1px 1px 10px gray; }
+    .home__menu__nav.--column {
+      box-shadow: none;
+      flex-direction: column; }
+      .home__menu__nav.--column > * {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: .33em;
+        text-decoration: none;
+        color: inherit; }
   .home__menu__section {
     display: flex;
     justify-content: space-around;
-    gap: 2rem;
+    gap: 1rem;
     max-width: 50%; }
   .home__menu__title {
-    display: flex; }
+    display: flex;
+    gap: .5rem; }
     .home__menu__title > h3 {
       display: flex;
       flex-wrap: wrap;
-      align-content: center; }
+      font-weight: 500; }
 
 html, * {
   box-sizing: border-box;
