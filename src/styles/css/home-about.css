@@ -7,11 +7,11 @@ Error: Undefined variable: "$theme-colors".
 3: .home__about{
 4:     &__intro{
 5:         background-color: map-get($map: $theme-colors, $key: quinary);
-6:         padding-inline: 1rem;
-7:         padding-block: 2.5rem;
-8:         display: flex;
-9:         flex-direction: column;
-10:         align-items: start;
+6:         padding: 2.5rem 1.5rem 12rem;
+7:         display: flex;
+8:         flex-direction: column;
+9:         align-items: start;
+10:         gap: 2rem;
 
 Backtrace:
 scss/home-about.scss:5
@@ -91,4 +91,4 @@ scss/home-about.scss:5
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 5 of scss/home-about.scss\A \A 1: $weight-normal: 400;\A 2: \A 3: .home__about{\A 4:     &__intro{\A 5:         background-color: map-get($map: $theme-colors, $key: quinary);\A 6:         padding-inline: 1rem;\A 7:         padding-block: 2.5rem;\A 8:         display: flex;\A 9:         flex-direction: column;\A 10:         align-items: start;"; }
+  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 5 of scss/home-about.scss\A \A 1: $weight-normal: 400;\A 2: \A 3: .home__about{\A 4:     &__intro{\A 5:         background-color: map-get($map: $theme-colors, $key: quinary);\A 6:         padding: 2.5rem 1.5rem 12rem;\A 7:         display: flex;\A 8:         flex-direction: column;\A 9:         align-items: start;\A 10:         gap: 2rem;"; }
