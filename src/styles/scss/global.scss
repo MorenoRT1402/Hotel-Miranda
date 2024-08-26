@@ -1,3 +1,14 @@
+$theme-colors: (
+    main: white,
+    secondary: #333333,
+    terciary: #BEAD8E,
+);
+$fonts: (
+    archivo: "Archivo",
+    old-standard: "Old Standard TT",
+    roboto: "Roboto",
+);
+
 $desktop-size: 1000px;
 
 .--invisible {
