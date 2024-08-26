@@ -1,0 +1,40 @@
+$weight-normal: 400;
+
+.home__about{
+    &__intro{
+        background-color: map-get($map: $theme-colors, $key: quinary);
+        padding-inline: 1rem;
+        padding-block: 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2rem;
+
+        &>p{
+            font-family: map-get($map: $fonts, $key: archivo);
+            color: #777777;
+        }
+
+        &__header{
+            font-size: 13px;
+            font-weight: 700;
+            line-height: 18px;
+            letter-spacing: 2.799999952316284px;
+            text-align: center;
+        }
+
+        &>h2{
+            font-family: map-get($map: $fonts, $key: old-standard);
+            font-size: 56px;
+            font-weight: $weight-normal;
+            line-height: 60px;
+            letter-spacing: -1.2000000476837158px;
+        }
+
+        &__description{
+            font-size: 14px;
+            font-weight: $weight-normal;
+            line-height: 24px;
+        }
+    }
+}
