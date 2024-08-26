@@ -1,5 +1,22 @@
 .home__menu {
-  position: fixed; }
+  position: fixed;
+  width: 100%; }
+  .home__menu__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 1px 1px 10px gray; }
+  .home__menu__section {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    max-width: 50%; }
+  .home__menu__title {
+    display: flex; }
+    .home__menu__title > h3 {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center; }
 
 html, * {
   box-sizing: border-box;

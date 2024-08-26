@@ -1,5 +1,30 @@
 .home{
     &__menu {
         position: fixed;
+        width: 100%;
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem;
+            box-shadow: 1px 1px 10px gray;
+        }
+
+        &__section {
+            display: flex;
+            justify-content: space-around;
+            gap: 2rem;
+            max-width: 50%;
+        }
+
+        &__title{
+            display: flex;
+
+            &>h3{
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+        }
     }
 }
