@@ -1,0 +1,39 @@
+$font-roboto: map-get($map: $fonts, $key: roboto);
+
+.home__availability-form{
+    background-color: map-get($map: $theme-colors, $key: quaternary);
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    padding-block: 3rem;
+    gap: 1.5rem;
+
+    &>*{
+        color: white;
+        font-family: $font-roboto;
+    }
+
+    &>label{
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.75px;
+    }
+
+    &>div{
+        display: flex;
+        gap: .5rem;
+        border-bottom: 2px solid map-get($map: $theme-colors, $key: tertiary);
+        padding-bottom: .5rem;
+        
+        &>input{
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            pointer-events: none;
+        }
+    }
+
+    &>button{
+        width: 70%;
+    }
+}

@@ -1,3 +1,16 @@
+.standard-button {
+  background-color: #BEAD8E;
+  color: white;
+  border-color: #FFFFFF54;
+  width: 12rem;
+  padding: 1rem;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15.23px;
+  letter-spacing: 2.799999952316284px; }
+  .standard-button.--transparent {
+    background-color: transparent; }
+
 .--invisible {
   display: none; }
 
