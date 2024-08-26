@@ -1,0 +1,12 @@
+.home__menu {
+  position: fixed; }
+
+html, * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-width: 320px; }
+
+/*# sourceMappingURL=styles.css.map */
