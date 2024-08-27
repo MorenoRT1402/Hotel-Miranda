@@ -46,6 +46,12 @@ $desktop-size: 1000px;
     color: #777777;
 }
 
+.old-standard-text{
+    font-family: map-get($map: $fonts, $key: old-standard);
+    color: map-get($map: $theme-colors, $key: quaternary);
+    font-weight: 400;
+}
+
 .--invisible {
     display: none;
 }

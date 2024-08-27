@@ -93,28 +93,30 @@
         <section class="home__rooms">
             <p>ROOMS</p>
             <h3>Hand Picked Rooms</h3>
-            <img src="./public/images/Frame 57.svg" alt="services-">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="slide"><img src="https://picsum.photos/302/202" alt=""></div>
-                    <div class="slide"><img src="https://picsum.photos/303/203" alt=""></div>
-                    <div class="slide"><img src="https://picsum.photos/304/204" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
-
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <article class="home__rooms__description">
-                <h4>Minimal Duplex Room</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur 
-                    adipisicing elit, sed do eiusmod tempor 
-                    incididunt ut labore et dolore.</p>
-                <section class="home__rooms__description__price">
-                    <h4 class="home__rooms__description__price__number">$345</h4>
-                    <span>/Night</span>
-                </section>
-            </article>
+                <div class="swiper swiper-home-rooms">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="home__rooms__room">
+                                <img class="home__rooms__room__services" src="./public/images/Frame 57.svg" alt="services-">
+                                <img class="home__rooms__room__img" src="https://picsum.photos/302/202" alt="">
+                                <section class="home__rooms__room__description">
+                                    <h4>Minimal Duplex Room</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur 
+                                        adipisicing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore.</p>
+                                    <section class="home__rooms__room__description__price">
+                                        <h4 class="home__rooms__room__description__price__number">$345</h4>
+                                        <span>/Night</span>
+                                    </section>
+                                </section>
+                            </article>
+                        </div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/303/203" alt=""></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/304/204" alt=""></div>
+                    </div>    
+                    <div class="swiper-button-prev swiper-button-prev-home-rooms"></div>
+                    <div class="swiper-button-next swiper-button-next-home-rooms"></div>
+                </div> 
         </section>
         <section class="home__intro-video">
             <strong>INTRO VIDEO</strong>
@@ -146,10 +148,49 @@
                 </div>
             </div>
         </section>
+        <section class="home__food-menu">
+            <strong>MENU</strong>
+            <h3>Our Foods Menu</h3>
+            <div class="swiper-menu">
+                <div class="swiper-wrapper">
+                    <article class="home__food-menu__food">
+                        <img src="https://picsum.photos/305/205" alt="">
+                        <section class="home__food-menu__food__info">
+                            <h4>Eggs & Bacon</h4>
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adip isicing elit, 
+                                sed do eiusmod tempor.</p>
+                        </section>
+                    </article>
+                    <article class="home__food-menu__food">
+                        <img src="https://picsum.photos/306/206" alt="">
+                        <section class="home__food-menu__food__info">
+                            <h4>Tea or Coffee</h4>
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adip isicing elit, 
+                                sed do eiusmod tempor.</p>
+                        </section>
+                    </article>
+                    <article class="home__food-menu__food">
+                        <img src="https://picsum.photos/307/207" alt="">
+                        <section class="home__food-menu__food__info">
+                            <h4>Chia Oatmeal</h4>
+                            <p>Lorem ipsum dolor sit amet, 
+                                consectetur adip isicing elit, 
+                                sed do eiusmod tempor.</p>
+                        </section>
+                    </article>
+                </div>
+                <div class="swiper-menu__buttons">
+                    <div class="swiper-menu-prev"></div>
+                    <div class="swiper-menu-next"></div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <script src="./src/features/deployable-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script type="module" src="./src/features/swiper.js"></script>
+    <script src="./src/features/swiper-home-rooms.js"></script>
 </body>
 </html>

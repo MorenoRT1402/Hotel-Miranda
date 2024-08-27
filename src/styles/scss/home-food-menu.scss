@@ -1,0 +1,24 @@
+.home__food-menu{
+    margin-top: 2rem;
+    background-image: url(../../../public/images/icon\ 4.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    padding-top: 7rem;
+    padding-inline: 1rem;
+
+    &>strong{
+        @extend .archivo-header;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+    }
+
+    &>h3{
+        @extend .old-standard-text;
+        font-size: 56px;
+        line-height: 60px;
+        letter-spacing: -1.2000000476837158px;
+        
+    }
+}

@@ -7,7 +7,7 @@ Error: Undefined variable: "$fonts".
 3: .home{
 4:     &__menu {
 5:         position: fixed;
-6:         width: 100%;
+6:         width: 100vw;
 
 Backtrace:
 scss/home-menu.scss:1
@@ -65,4 +65,4 @@ scss/home-menu.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home-menu.scss\A \A 1: $font-archivo: map-get($map: $fonts, $key: archivo);\A 2: \A 3: .home{\A 4:     &__menu {\A 5:         position: fixed;\A 6:         width: 100%;"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home-menu.scss\A \A 1: $font-archivo: map-get($map: $fonts, $key: archivo);\A 2: \A 3: .home{\A 4:     &__menu {\A 5:         position: fixed;\A 6:         width: 100vw;"; }
