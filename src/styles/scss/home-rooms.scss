@@ -1,0 +1,35 @@
+.home__rooms {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &>p{
+        // font-family: map-get($map: $fonts, $key: archivo);
+        color: #777777;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 15.23px;
+        letter-spacing: 2.799999952316284px;
+    }
+
+    &>h3{
+        // font-family: map-get($map: $fonts, $key: old-standard);
+        font-size: 56px;
+        font-weight: 400;
+        line-height: 60px;
+        letter-spacing: -1.2000000476837158px;
+    }
+
+    &>img{
+        position: relative;
+        z-index: 2;
+    }
+
+    &>.swiper{
+        width: 100%;
+        margin-top: -2.8rem;
+    }
+}
