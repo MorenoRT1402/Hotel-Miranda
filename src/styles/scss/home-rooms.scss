@@ -1,13 +1,28 @@
+$old-standard-font: map-get($map: $fonts, $key: old-standard); 
+$archivo-font: map-get($map: $fonts, $key: archivo);
+$gap-value: 1rem;
+@mixin overlap($value){
+    margin-top: - ($gap-value + $value);
+}
+@mixin priceElements($font-size){
+    font-family: $archivo-font;
+    font-size: $font-size;
+    font-weight: 700;
+    line-height: 43px;
+    text-align: center;
+    color: map-get($map: $theme-colors, $key: tertiary);
+}
+
 .home__rooms {
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    gap: $gap-value;
     text-align: center;
 
     &>p{
-        // font-family: map-get($map: $fonts, $key: archivo);
+        font-family: $archivo-font;
         color: #777777;
         font-size: 14px;
         font-weight: 700;
@@ -16,7 +31,7 @@
     }
 
     &>h3{
-        // font-family: map-get($map: $fonts, $key: old-standard);
+        font-family: $old-standard-font;
         font-size: 56px;
         font-weight: 400;
         line-height: 60px;
@@ -30,6 +45,48 @@
 
     &>.swiper{
         width: 100%;
-        margin-top: -2.8rem;
+        @include overlap(2.8);
+    }
+
+    &__description{
+        $padding: 1.6rem;
+        
+        @include overlap($padding);
+        z-index: 3;
+        background-color: white;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: $padding;
+
+        &>h4{
+            font-family: $old-standard-font;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -1.2000000476837158px;
+        }
+
+        &>p{
+            font-family: map-get($map: $fonts, $key: roboto);
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        &__price{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            &__number{
+                @include priceElements(32px);
+            }
+
+            &>span{
+                @include priceElements(13px);
+            }
+        }
     }
 }
