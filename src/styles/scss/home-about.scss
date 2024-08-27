@@ -10,8 +10,7 @@ $weight-normal: 400;
         gap: 2rem;
 
         &>p{
-            font-family: map-get($map: $fonts, $key: archivo);
-            color: #777777;
+            @extend .archivo-header;
         }
 
         &__header{
@@ -67,17 +66,6 @@ $weight-normal: 400;
                 &.--dark{
                     background-color: map-get($map: $theme-colors, $key: quaternary);
                     color: white;
-                }
-
-                &>img{
-                    &.--bg{
-                        position: absolute;
-                        z-index: -1;
-                        top: 2.3rem;
-                        right: 2.8rem;
-                        transform: scale(2);
-                        opacity: .12;
-                    }
                 }
 
                 &>p{

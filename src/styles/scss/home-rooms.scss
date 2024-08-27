@@ -22,8 +22,7 @@ $gap-value: 1rem;
     text-align: center;
 
     &>p{
-        font-family: $archivo-font;
-        color: #777777;
+        @extend .archivo-header;
         font-size: 14px;
         font-weight: 700;
         line-height: 15.23px;
@@ -50,7 +49,7 @@ $gap-value: 1rem;
 
     &__description{
         $padding: 1.6rem;
-        
+
         @include overlap($padding);
         z-index: 3;
         background-color: white;

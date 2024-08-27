@@ -12,6 +12,18 @@
   .standard-button.--transparent {
     background-color: transparent; }
 
+.bg-right-top {
+  position: absolute;
+  z-index: -1;
+  top: 2.3rem;
+  right: 2.8rem;
+  transform: scale(2);
+  opacity: .12; }
+
+.archivo-header, .home__about__intro > p, .home__rooms > p, .home__facilities > strong, .home__facilities__feature > p {
+  font-family: "Archivo";
+  color: #777777; }
+
 .--invisible {
   display: none; }
 
@@ -112,9 +124,6 @@
   flex-direction: column;
   align-items: start;
   gap: 2rem; }
-  .home__about__intro > p {
-    font-family: "Archivo";
-    color: #777777; }
   .home__about__intro__header {
     font-size: 13px;
     font-weight: 700;
@@ -156,13 +165,6 @@
       .home__about__info > article > section.--dark {
         background-color: #222222;
         color: white; }
-      .home__about__info > article > section > img.--bg {
-        position: absolute;
-        z-index: -1;
-        top: 2.3rem;
-        right: 2.8rem;
-        transform: scale(2);
-        opacity: .12; }
       .home__about__info > article > section > p {
         font-family: "Roboto";
         font-size: 14px;
@@ -178,8 +180,6 @@
   gap: 1rem;
   text-align: center; }
   .home__rooms > p {
-    font-family: "Archivo";
-    color: #777777;
     font-size: 14px;
     font-weight: 700;
     line-height: 15.23px;
@@ -267,6 +267,53 @@
   .home__intro-video__player {
     width: 100%;
     border: 0; }
+
+.home__facilities {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem;
+  padding: 1rem; }
+  .home__facilities > strong {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.23px;
+    letter-spacing: 2.799999952316284px; }
+  .home__facilities > h3 {
+    font-family: "Old Standard TT";
+    color: #222222;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px; }
+  .home__facilities__feature {
+    padding-top: 5.5rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: start;
+    text-align: start; }
+    .home__facilities__feature > span {
+      transform: scale(1);
+      right: 1rem;
+      top: 0;
+      font-family: "Archivo";
+      color: #222222;
+      font-size: 120px;
+      font-weight: 700;
+      line-height: 130px; }
+    .home__facilities__feature > h4 {
+      font-family: "Old Standard TT";
+      color: #222222;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -0.8999999761581421px; }
+    .home__facilities__feature > p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px; }
 
 html, * {
   box-sizing: border-box;

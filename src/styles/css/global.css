@@ -12,6 +12,18 @@
   .standard-button.--transparent {
     background-color: transparent; }
 
+.bg-right-top {
+  position: absolute;
+  z-index: -1;
+  top: 2.3rem;
+  right: 2.8rem;
+  transform: scale(2);
+  opacity: .12; }
+
+.archivo-header {
+  font-family: "Archivo";
+  color: #777777; }
+
 .--invisible {
   display: none; }
 

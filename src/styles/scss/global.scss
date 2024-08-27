@@ -32,6 +32,20 @@ $desktop-size: 1000px;
     }
 }
 
+.bg-right-top{
+    position: absolute;
+    z-index: -1;
+    top: 2.3rem;
+    right: 2.8rem;
+    transform: scale(2);
+    opacity: .12;
+}
+
+.archivo-header{
+    font-family: map-get($map: $fonts, $key: archivo);
+    color: #777777;
+}
+
 .--invisible {
     display: none;
 }
