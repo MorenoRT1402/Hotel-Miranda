@@ -1,3 +1,12 @@
+.section-base, .section-common, .home__rooms, .home__facilities, .home__food-menu {
+  margin-top: 2rem; }
+
+.section-common, .home__rooms, .home__facilities {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 1rem; }
+
 .standard-button {
   background-color: #BEAD8E;
   color: white;
@@ -181,11 +190,6 @@
         text-align: center; }
 
 .home__rooms {
-  margin-top: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
   text-align: center; }
   .home__rooms > p {
     font-size: 14px;
@@ -302,10 +306,6 @@
     border: 0; }
 
 .home__facilities {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
   padding: 1rem; }
   .home__facilities > strong {
     font-size: 14px;
@@ -352,9 +352,10 @@
   .home__facilities .swiper-pagination {
     position: relative;
     margin-top: 1rem; }
+    .home__facilities .swiper-pagination > span {
+      background-color: #BEAD8E; }
 
 .home__food-menu {
-  margin-top: 2rem;
   background-image: url(../../../public/images/icon\ 4.svg);
   background-repeat: no-repeat;
   background-position: right top;

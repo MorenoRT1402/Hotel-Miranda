@@ -1,11 +1,11 @@
 /*
-Sass::SyntaxError: ".home__food-menu > strong" failed to @extend ".archivo-header".
-The selector ".archivo-header" was not found.
-Use "@extend .archivo-header !optional" if the extend should be able to fail.
+Sass::SyntaxError: ".home__food-menu" failed to @extend ".section-base".
+The selector ".section-base" was not found.
+Use "@extend .section-base !optional" if the extend should be able to fail.
 
 
 Backtrace:
-scss/home-food-menu.scss:10
+scss/home-food-menu.scss:2
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `block in each_value'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each'
@@ -37,4 +37,4 @@ scss/home-food-menu.scss:10
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: \".home__food-menu > strong\" failed to @extend \".archivo-header\".\A The selector \".archivo-header\" was not found.\A Use \"@extend .archivo-header !optional\" if the extend should be able to fail.\A "; }
+  content: "Sass::SyntaxError: \".home__food-menu\" failed to @extend \".section-base\".\A The selector \".section-base\" was not found.\A Use \"@extend .section-base !optional\" if the extend should be able to fail.\A "; }

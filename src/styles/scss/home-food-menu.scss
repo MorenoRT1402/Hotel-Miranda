@@ -1,5 +1,5 @@
 .home__food-menu{
-    margin-top: 2rem;
+    @extend .section-base;
     background-image: url(../../../public/images/icon\ 4.svg);
     background-repeat: no-repeat;
     background-position: right top;
