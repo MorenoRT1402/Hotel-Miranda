@@ -411,6 +411,36 @@
   #home-food-view > .swiper-wrapper > .swiper-slide > img {
     width: 100%; }
 
+.home__metrics {
+  background-color: #222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .home__metrics__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+    color: white; }
+    .home__metrics__card__text {
+      font-family: "Roboto";
+      text-align: center;
+      font-weight: 700; }
+      .home__metrics__card__text > div {
+        margin-bottom: -1rem; }
+        .home__metrics__card__text > div > h3 {
+          display: inline;
+          font-size: 60px;
+          line-height: 81.84px; }
+        .home__metrics__card__text > div > span {
+          font-size: 16px;
+          line-height: 21.82px; }
+      .home__metrics__card__text > span {
+        font-size: 16px;
+        line-height: 21.82px;
+        color: #999999; }
+
 html, * {
   box-sizing: border-box;
   margin: 0;
