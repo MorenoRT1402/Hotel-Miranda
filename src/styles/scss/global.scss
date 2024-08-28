@@ -64,6 +64,13 @@ $desktop-size: 1000px;
     font-weight: 400;
 }
 
+.roboto-text{
+    font-family: map-get($map: $fonts, $key: roboto);
+    color: map-get($map: $theme-colors, $key: quaternary);
+    font-size: 14px;
+    font-weight: 400;
+}
+
 .--invisible {
     display: none;
 }

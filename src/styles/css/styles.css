@@ -1,7 +1,7 @@
 .section-base, .section-common, .home__rooms, .home__facilities, .home__food-menu {
   margin-top: 2rem; }
 
-.section-common, .home__rooms, .home__facilities {
+.section-common, .home__rooms, .home__facilities, .home__food-menu {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -33,9 +33,15 @@
   font-family: "Archivo";
   color: #777777; }
 
-.old-standard-text, .home__food-menu > h3 {
+.old-standard-text, .home__food-menu > h3, .home__food-menu__food__info > h4 {
   font-family: "Old Standard TT";
   color: #222222;
+  font-weight: 400; }
+
+.roboto-text, .home__about__info > article > section > p, .home__rooms__room__description > p, .home__food-menu__food__info > p {
+  font-family: "Roboto";
+  color: #222222;
+  font-size: 14px;
   font-weight: 400; }
 
 .--invisible {
@@ -43,6 +49,26 @@
 
 .swiper {
   width: 100%; }
+
+.swiper-button-next.--custom {
+  background-color: #BDAC8D;
+  color: white;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(0, -5rem); }
+  .swiper-button-next.--custom::after {
+    content: ">";
+    font-size: 9px; }
+
+.swiper-button-prev.--custom {
+  background-color: white;
+  color: black;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: translate(0, -5rem); }
+  .swiper-button-prev.--custom::after {
+    content: "<";
+    font-size: 9px; }
 
 .home__menu {
   position: fixed;
@@ -183,9 +209,6 @@
         background-color: #222222;
         color: white; }
       .home__about__info > article > section > p {
-        font-family: "Roboto";
-        font-size: 14px;
-        font-weight: 400;
         line-height: 22px;
         text-align: center; }
 
@@ -205,24 +228,6 @@
   .home__rooms > .swiper-home-rooms {
     width: 100%;
     height: auto; }
-    .home__rooms > .swiper-home-rooms .swiper-button-next {
-      background-color: #BDAC8D;
-      color: white;
-      width: 1.5rem;
-      height: 1.5rem;
-      transform: translate(0, -5rem); }
-      .home__rooms > .swiper-home-rooms .swiper-button-next::after {
-        content: ">";
-        font-size: 9px; }
-    .home__rooms > .swiper-home-rooms .swiper-button-prev {
-      background-color: white;
-      color: black;
-      width: 1.5rem;
-      height: 1.5rem;
-      transform: translate(0, -5rem); }
-      .home__rooms > .swiper-home-rooms .swiper-button-prev::after {
-        content: "<";
-        font-size: 9px; }
   .home__rooms__room {
     display: flex;
     flex-direction: column;
@@ -249,9 +254,6 @@
         line-height: 36px;
         letter-spacing: -1.2000000476837158px; }
       .home__rooms__room__description > p {
-        font-family: "Roboto";
-        font-size: 14px;
-        font-weight: 400;
         line-height: 24px;
         text-align: center; }
       .home__rooms__room__description__price {
@@ -356,6 +358,7 @@
       background-color: #BEAD8E; }
 
 .home__food-menu {
+  text-align: left;
   background-image: url(../../../public/images/icon\ 4.svg);
   background-repeat: no-repeat;
   background-position: right top;
@@ -370,6 +373,35 @@
     font-size: 56px;
     line-height: 60px;
     letter-spacing: -1.2000000476837158px; }
+  .home__food-menu > .swiper-food-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem; }
+    .home__food-menu > .swiper-food-menu > .swiper-menu__buttons {
+      display: flex;
+      justify-content: end;
+      gap: 3rem;
+      padding-block: 1rem; }
+      .home__food-menu > .swiper-food-menu > .swiper-menu__buttons > div {
+        transform: translate(0);
+        transform: scale(1.5);
+        position: relative; }
+  .home__food-menu__food {
+    display: flex;
+    gap: 1.2rem;
+    margin-bottom: 1rem; }
+    .home__food-menu__food > img {
+      max-width: 40%; }
+    .home__food-menu__food__info {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem; }
+      .home__food-menu__food__info > h4 {
+        font-size: 24px;
+        line-height: 24px;
+        letter-spacing: -0.7200000286102295px; }
+      .home__food-menu__food__info > p {
+        line-height: 24px; }
 
 html, * {
   box-sizing: border-box;

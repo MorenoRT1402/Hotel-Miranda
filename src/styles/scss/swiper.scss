@@ -1,3 +1,25 @@
+@mixin swiperArrows($bgColor, $color, $content){
+    background-color: $bgColor;
+    color: $color;
+    width: 1.5rem;
+    height: 1.5rem;
+    transform: translate(0, -5rem);
+    &::after{
+        content: $content;
+        font-size: 9px;
+    }
+}
+
 .swiper{
     width: 100%;
+}
+
+.swiper-button-next.--custom{
+    $bgColor: map-get($map: $theme-colors, $key: senary);
+    @include swiperArrows($bgColor: $bgColor,$color: white ,$content: '>' );
+}
+
+.swiper-button-prev.--custom{
+    $bgColor: map-get($map: $theme-colors, $key: main);
+    @include swiperArrows($bgColor: $bgColor,$color: black ,$content: '<' );
 }

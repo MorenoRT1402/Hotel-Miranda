@@ -48,16 +48,6 @@ $gap-value: 1rem;
     &>.swiper-home-rooms{
         width: 100%;
         height: auto;
-
-        & .swiper-button-next{
-            $bgColor: map-get($map: $theme-colors, $key: senary);
-            @include swiperArrows($bgColor: $bgColor,$color: white ,$content: '>' );
-        }
-
-        & .swiper-button-prev{
-            $bgColor: map-get($map: $theme-colors, $key: main);
-            @include swiperArrows($bgColor: $bgColor,$color: black ,$content: '<' );
-        }
     }
 
     &__room{
@@ -96,9 +86,7 @@ $gap-value: 1rem;
             }
     
             &>p{
-                font-family: map-get($map: $fonts, $key: roboto);
-                font-size: 14px;
-                font-weight: 400;
+                @extend .roboto-text;
                 line-height: 24px;
                 text-align: center;
             }

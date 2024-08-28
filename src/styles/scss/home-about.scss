@@ -69,9 +69,7 @@ $weight-normal: 400;
                 }
 
                 &>p{
-                    font-family: map-get($map: $fonts, $key: roboto);
-                    font-size: 14px;
-                    font-weight: 400;
+                    @extend .roboto-text;
                     line-height: 22px;
                     text-align: center;
                 }
