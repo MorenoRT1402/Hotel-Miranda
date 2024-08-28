@@ -6,9 +6,4 @@ const swiperHomeRooms = new Swiper('.swiper-home-rooms', {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
-
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    }
 });

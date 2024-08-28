@@ -33,8 +33,7 @@
   display: none; }
 
 .swiper {
-  width: 600px;
-  height: 300px; }
+  width: 100%; }
 
 .home__menu {
   position: fixed;
@@ -350,6 +349,9 @@
       font-size: 14px;
       font-weight: 400;
       line-height: 24px; }
+  .home__facilities .swiper-pagination {
+    position: relative;
+    margin-top: 1rem; }
 
 .home__food-menu {
   margin-top: 2rem;

@@ -65,4 +65,9 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
             line-height: 24px;
         }
     }
+
+    & .swiper-pagination{
+        position: relative;
+        margin-top: 1rem;
+    }
 }
