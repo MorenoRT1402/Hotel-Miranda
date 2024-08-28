@@ -93,7 +93,7 @@
         <section class="home__rooms">
             <p>ROOMS</p>
             <h3>Hand Picked Rooms</h3>
-                <div class="swiper swiper-home-rooms">
+                <div class="swiper swiper-navigation">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <article class="home__rooms__room">
@@ -174,7 +174,7 @@
         <section class="home__food-menu">
             <strong>MENU</strong>
             <h3>Our Foods Menu</h3>
-            <div class="swiper swiper-food-menu">
+            <div class="swiper swiper-navigation">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
                         <article class="home__food-menu__food">
@@ -233,13 +233,19 @@
                     <div class="swiper-button-next --custom"></div>
                 </div>
             </div>
+            <div class="swiper swiper-food-view">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                </div>
+            </div>
         </section>
     </main>
 
     <script src="./src/features/deployable-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="./src/features/swiper-home-rooms.js"></script>
-    <script src="./src/features/swiper-home-facilities.js"></script>
-    <script src="./src/features/swiper-food-menu.js"></script>
+    <script src="./src/features/swiper/swiper-home-facilities.js"></script>
+    <script src="./src/features/swiper/swiper-navigation.js"></script>
 </body>
 </html>

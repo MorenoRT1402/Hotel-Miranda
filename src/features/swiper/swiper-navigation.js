@@ -1,4 +1,4 @@
-const swiperHomeRooms = new Swiper('.swiper-home-rooms', {
+const swiperNavigation = new Swiper('.swiper-navigation', {
     direction: 'horizontal',
     loop: true,
 

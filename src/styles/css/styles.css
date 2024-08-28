@@ -373,16 +373,16 @@
     font-size: 56px;
     line-height: 60px;
     letter-spacing: -1.2000000476837158px; }
-  .home__food-menu > .swiper-food-menu {
+  .home__food-menu > .swiper {
     display: flex;
     flex-direction: column;
     gap: 2rem; }
-    .home__food-menu > .swiper-food-menu > .swiper-menu__buttons {
+    .home__food-menu > .swiper > .swiper-menu__buttons {
       display: flex;
       justify-content: end;
       gap: 3rem;
       padding-block: 1rem; }
-      .home__food-menu > .swiper-food-menu > .swiper-menu__buttons > div {
+      .home__food-menu > .swiper > .swiper-menu__buttons > div {
         transform: translate(0);
         transform: scale(1.5);
         position: relative; }
