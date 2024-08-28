@@ -26,7 +26,7 @@
     &>.swiper{
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
 
         &>.swiper-menu__buttons{
             display: flex;
@@ -69,4 +69,17 @@
             }
         }
     }
+}
+
+#home-food-view{
+    gap: 0;
+    &>.swiper-wrapper{
+        &>.swiper-slide{
+            &>img{
+                width: 100%;
+            }
+        }
+    }
+    display: flex;
+    justify-content: center;
 }

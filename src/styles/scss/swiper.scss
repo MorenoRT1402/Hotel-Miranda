@@ -23,3 +23,12 @@
     $bgColor: map-get($map: $theme-colors, $key: main);
     @include swiperArrows($bgColor: $bgColor,$color: black ,$content: '<' );
 }
+
+.swiper-pagination.--custom{
+    position: relative;
+    margin-top: 1rem;
+
+    &>span{
+        background-color: map-get($map: $theme-colors, $key: tertiary);
+    }
+}
