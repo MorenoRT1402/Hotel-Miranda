@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAc;EACV,OAAO,EAAE,IAAI",
+"sources": ["../scss/comps.scss"],
+"names": [],
+"file": "comps.css"
+}
