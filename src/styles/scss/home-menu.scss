@@ -34,38 +34,11 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
         &__section {
             display: flex;
-            justify-content: space-around;
+            align-items: center;
             gap: 1rem;
-            max-width: 50%;
-        }
 
-        &__title{
-            display: flex;
-            gap: .5rem;
-
-            &__logo{
-                box-shadow: 0px 14px 24px 0px #8B8B8B40;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                padding: .8rem;
-
-                &>span{
-                    font-family: map-get($map: $fonts, $key: archivo);
-                    font-weight: 700;
-                    width: 0.6763rem;
-                    height: 0.7719rem;
-                    gap: 0px;
-                    opacity: 0px;
-                }
-            }
-
-            &>h3{
-                display: flex;
-                flex-wrap: wrap;
-                font-family: $font-archivo;
-                font-weight: 500;
-                
+            &:first-child{
+                width: 50%;
             }
         }
     }

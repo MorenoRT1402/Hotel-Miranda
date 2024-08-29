@@ -15,6 +15,52 @@ $fonts: (
 
 $desktop-size: 1000px;
 
+.title{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15%;
+    font-family: map-get($map: $fonts, $key: archivo);
+
+    &__logo{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        aspect-ratio: 1 / 1.01;
+        box-shadow: 0px 14px 24px 0px #8B8B8B40;
+        padding: 1%;
+
+        &.--variant{
+            background-color: map-get($map: $theme-colors, $key: tertiary);
+            color: white;
+            font-size: 40px;
+        }
+
+        &>span{
+            width: 100%;
+            text-align: center;
+            font-weight: 700;
+        }
+    }
+
+    &__text{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        &.--variant{
+            font-size: 26px;
+            line-height: 28.29px;
+            letter-spacing: 2.5999999046325684px;
+        }
+    }
+
+    &.--variant{
+        gap: 1rem;
+    }
+}
+
 .section-base {
     margin-top: 2rem;
 }
