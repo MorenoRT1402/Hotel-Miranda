@@ -5,7 +5,7 @@ Use "@extend .section-common !optional" if the extend should be able to fail.
 
 
 Backtrace:
-scss/home-food-menu.scss:2
+scss/home/home-food-menu.scss:2
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `block in each_value'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each'

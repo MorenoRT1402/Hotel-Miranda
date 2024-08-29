@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,kBAAkB;EACd,gBAAgB,EAAE,EAAE;EACpB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,MAAM;EAMlB,0BAAS;IACL,KAAK,EAAE,IAAI",
-"sources": ["../scss/home-intro-video.scss"],
-"names": [],
-"file": "home-intro-video.css"
-}

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,gBAAgB;EACZ,UAAU,EAAE,IAAI;EAChB,gBAAgB,EAAE,uCAAuC;EACzD,iBAAiB,EAAE,SAAS;EAC5B,mBAAmB,EAAE,SAAS;EAC9B,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EAEpB,yBAAQ;IAEJ,SAAS,EAAE,IAAI;IACf,WAAW,EAAE,GAAG;IAChB,WAAW,EAAE,OAAO;IACpB,cAAc,EAAE,mBAAmB",
-"sources": ["../scss/home-food-menu.scss"],
-"names": [],
-"file": "home-food-menu.css"
-}

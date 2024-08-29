@@ -1,4 +1,4 @@
-.home__footer{
+.footer{
     &__main{
         background-image: url('./../../../public/images/bg-rectangle.svg');
         padding: 1.1rem;
@@ -59,7 +59,7 @@
         }
 
         &__services{
-            @extend .home__footer__main__header-base;
+            @extend .footer__main__header-base;
 
             &>section{
                 &>span{
@@ -72,7 +72,7 @@
         }
 
         &__contact{
-            @extend .home__footer__main__header-base;
+            @extend .footer__main__header-base;
 
             &>section{
                 display: flex;

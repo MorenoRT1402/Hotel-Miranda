@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,WAAY;EACR,gBAAgB,EAAE,GAAG",
-"sources": ["../scss/home-tour.scss"],
-"names": [],
-"file": "home-tour.css"
-}

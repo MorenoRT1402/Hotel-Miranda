@@ -1,16 +1,16 @@
 /*
 Error: Undefined variable: "$fonts".
-        on line 1 of scss/home-menu.scss
+        on line 1 of scss/home/home-availability-form.scss
 
-1: $font-archivo: map-get($map: $fonts, $key: archivo);
+1: $font-roboto: map-get($map: $fonts, $key: roboto);
 2: 
-3: .home{
-4:     &__menu {
-5:         position: fixed;
-6:         width: 100vw;
+3: .home__availability-form{
+4:     background-color: map-get($map: $theme-colors, $key: quaternary);
+5:     display: flex;
+6:     flex-direction: column;
 
 Backtrace:
-scss/home-menu.scss:1
+scss/home/home-availability-form.scss:1
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -65,4 +65,4 @@ scss/home-menu.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home-menu.scss\A \A 1: $font-archivo: map-get($map: $fonts, $key: archivo);\A 2: \A 3: .home{\A 4:     &__menu {\A 5:         position: fixed;\A 6:         width: 100vw;"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home/home-availability-form.scss\A \A 1: $font-roboto: map-get($map: $fonts, $key: roboto);\A 2: \A 3: .home__availability-form{\A 4:     background-color: map-get($map: $theme-colors, $key: quaternary);\A 5:     display: flex;\A 6:     flex-direction: column;"; }

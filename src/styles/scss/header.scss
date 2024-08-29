@@ -1,7 +1,6 @@
 $font-archivo: map-get($map: $fonts, $key: archivo);
 
-.home{
-    &__menu {
+.header{
         position: fixed;
         width: 100vw;
         z-index: 10;
@@ -42,4 +41,3 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
             }
         }
     }
-}
