@@ -62,7 +62,7 @@
   transform: scale(2);
   opacity: .12; }
 
-.archivo-header, .home__about__intro > p, .home__rooms > p, .home__facilities > strong, .home__food-menu > strong {
+.archivo-header, .home__about__intro > p, .home__rooms > p, .home__facilities > strong, .home__food-menu > strong, .home__footer__main > p {
   font-family: "Archivo";
   color: #777777; }
 
@@ -469,12 +469,33 @@
 
 .home__footer__main {
   background-image: url("./../../../public/images/bg-rectangle.svg");
+  padding: 1.1rem;
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 1rem; }
+  gap: 2rem; }
   .home__footer__main > .title {
     height: 5rem; }
+  .home__footer__main > p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px; }
+  .home__footer__main__socials {
+    display: flex;
+    gap: 1rem; }
+    .home__footer__main__socials > div {
+      display: flex;
+      justify-content: center;
+      padding: .5rem;
+      background-color: white; }
+      .home__footer__main__socials > div:hover {
+        background-color: #BEAD8E; }
+      .home__footer__main__socials > div > img {
+        height: 100%; }
+        .home__footer__main__socials > div > img.--fill {
+          background-color: #777474; }
+        .home__footer__main__socials > div > img:hover {
+          background-color: #BEAD8E; }
 .home__footer__policy {
   width: 100%;
   background-color: #F8F8F8;
