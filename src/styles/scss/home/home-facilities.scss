@@ -47,6 +47,10 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
             line-height: 130px;
         }
 
+        &>img:hover{
+            transform: scale(1.05);
+        }
+
         &>h4{
             @include facilities-standard();
             font-size: 30px;

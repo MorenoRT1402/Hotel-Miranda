@@ -2,6 +2,7 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
 .home__tour {
     @extend .section-intro;
+    gap: 2rem;
 
     &>p {
         max-width: 67%;
