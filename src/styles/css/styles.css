@@ -66,7 +66,7 @@
   font-family: "Archivo";
   color: #777777; }
 
-.old-standard-text, .home__food-menu > h3, .home__food-menu__food__info > h4, .home__footer__main__services > h4 {
+.old-standard-text, .home__food-menu > h3, .home__food-menu__food__info > h4, .home__footer__main h4 {
   font-family: "Old Standard TT";
   color: #222222;
   font-weight: 400; }
@@ -480,6 +480,13 @@
     font-size: 16px;
     font-weight: 400;
     line-height: 26px; }
+  .home__footer__main h4 {
+    font-size: 24px;
+    line-height: 24px; }
+  .home__footer__main__header-base, .home__footer__main__services, .home__footer__main__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
   .home__footer__main__socials {
     display: flex;
     gap: 1rem; }
@@ -496,18 +503,27 @@
           background-color: #777474; }
         .home__footer__main__socials > div > img:hover {
           background-color: #BEAD8E; }
-  .home__footer__main__services {
+  .home__footer__main__services > section > span {
+    min-width: 45%;
+    padding-right: 2.1rem;
+    margin-block: 1rem;
+    display: inline-block; }
+  .home__footer__main__contact > section {
     display: flex;
     flex-direction: column;
-    gap: 1rem; }
-    .home__footer__main__services > h4 {
-      font-size: 24px;
-      line-height: 24px; }
-    .home__footer__main__services > section > span {
-      min-width: 45%;
-      padding-right: 2.1rem;
-      margin-block: 1rem;
-      display: inline-block; }
+    gap: 3rem;
+    margin-block: 2rem; }
+    .home__footer__main__contact > section > article {
+      display: flex;
+      gap: 1.3rem; }
+      .home__footer__main__contact > section > article > section > h4 {
+        font-size: 20px; }
+      .home__footer__main__contact > section > article > section > span {
+        font-family: "Roboto";
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16.41px;
+        color: #777777; }
 .home__footer__policy {
   width: 100%;
   background-color: #F8F8F8;

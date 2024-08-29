@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$theme-colors".
-        on line 32 of scss/home-footer.scss
+        on line 44 of scss/home-footer.scss
 
-27:                 justify-content: center;
-28:                 padding: .5rem;
-29:                 background-color: white;
-30: 
-31:                 &:hover{
-32:                     background-color: map-get($map: $theme-colors, $key: tertiary);
-33:                 }
-34: 
-35:                 &>img{
-36:                     height: 100%;
-37: 
+39:                 justify-content: center;
+40:                 padding: .5rem;
+41:                 background-color: white;
+42: 
+43:                 &:hover{
+44:                     background-color: map-get($map: $theme-colors, $key: tertiary);
+45:                 }
+46: 
+47:                 &>img{
+48:                     height: 100%;
+49: 
 
 Backtrace:
-scss/home-footer.scss:32
+scss/home-footer.scss:44
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -125,4 +125,4 @@ scss/home-footer.scss:32
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 32 of scss/home-footer.scss\A \A 27:                 justify-content: center;\A 28:                 padding: .5rem;\A 29:                 background-color: white;\A 30: \A 31:                 &:hover{\A 32:                     background-color: map-get($map: $theme-colors, $key: tertiary);\A 33:                 }\A 34: \A 35:                 &>img{\A 36:                     height: 100%;\A 37: "; }
+  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 44 of scss/home-footer.scss\A \A 39:                 justify-content: center;\A 40:                 padding: .5rem;\A 41:                 background-color: white;\A 42: \A 43:                 &:hover{\A 44:                     background-color: map-get($map: $theme-colors, $key: tertiary);\A 45:                 }\A 46: \A 47:                 &>img{\A 48:                     height: 100%;\A 49: "; }

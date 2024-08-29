@@ -18,6 +18,18 @@
             line-height: 26px;
         }
 
+        & h4{
+            @extend .old-standard-text;
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        &__header-base{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
         &__socials{
             display: flex;
             gap: 1rem;
@@ -47,16 +59,7 @@
         }
 
         &__services{
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-            
-            &>h4{
-                @extend .old-standard-text;
-                font-size: 24px;
-                line-height: 24px;
-                
-            }
+            @extend .home__footer__main__header-base;
 
             &>section{
                 &>span{
@@ -64,6 +67,35 @@
                     padding-right: 2.1rem;
                     margin-block: 1rem;
                     display: inline-block;
+                }
+            }
+        }
+
+        &__contact{
+            @extend .home__footer__main__header-base;
+
+            &>section{
+                display: flex;
+                flex-direction: column;
+                gap: 3rem;
+                margin-block: 2rem;
+
+                &>article{
+                    display: flex;
+                    gap: 1.3rem;
+
+                    &>section{
+                        &>h4{
+                            font-size: 20px;
+                        }
+                        &>span{
+                            font-family: map-get($map: $fonts, $key: roboto);
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 16.41px;
+                            color: #777777;
+                        }
+                    }
                 }
             }
         }
