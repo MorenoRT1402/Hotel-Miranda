@@ -1,6 +1,10 @@
 .about{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
     &__intro{
-        padding: 3rem 1rem;
+        padding: 3rem 1.6rem;
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -42,7 +46,7 @@
                 }
 
                 &>img{
-                    width: 50%;
+                    width: 40%;
                     filter: sepia(1) hue-rotate() saturate(700%) brightness(60%);
                 }
 
@@ -56,5 +60,45 @@
                 }
             }
         }
+
+        &__tour{
+            $gap: 1.5rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: $gap;
+            box-shadow: 0px 14px 24px 0px #B8B8B81A;
+
+            &__info{
+                display: flex;
+                flex-direction: column;
+                gap: $gap;
+
+                    &>strong{
+                        @extend .archivo-header;
+                        font-size: 14px;
+                        font-weight: 700;
+                        line-height: 15.23px;
+                        letter-spacing: 2.799999952316284px;        }
+                        
+                    &>h3{
+                        @extend .old-standard-text;
+                        font-size: 40px;
+                        font-weight: 400;
+                        line-height: 49.44px;
+                        letter-spacing: -1.0499999523162842px;
+                    }
+
+                    &>p{
+                        width: 90%;
+                        @extend .archivo-header;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+
+            }
     }
 }
