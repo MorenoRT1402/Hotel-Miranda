@@ -1,3 +1,6 @@
+$archivo-font: map-get($map: $fonts, $key: archivo);
+$roboto-font: map-get($map: $fonts, $key: roboto);
+
 .room-details{
     padding: 2rem 1rem;
     display: flex;
@@ -14,11 +17,108 @@
         font-weight: 700;
 
         &>h4{
-            font-family: map-get($map: $fonts, $key: roboto);
+            font-family: $roboto-font;
             font-size: 18px;
             line-height: 19.58px;
             letter-spacing: -0.5400000214576721px;
             text-align: center;
+        }
+    }
+
+    &__amenities{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: 2rem;
+
+        &__title{
+            @extend .old-standard-text;
+            font-size: 30px;
+            line-height: 30px;
+        }
+        &__div{
+            width: 100%;
+            height: 1px;
+            background-color: #F1F1F1;
+            margin-bottom: 1rem;
+        }
+        &__list{
+
+            &>article{
+                min-width: 49%;
+                display: flex;
+                gap: .5rem;
+                display: inline-block;
+
+                &>span{
+                    font-family: $roboto-font;
+                    color: #7777;
+                    font-size: 15px;
+                    font-weight: 500;
+                    line-height: 17.58px;
+                }
+            }
+        }
+    }
+
+    &__founder{
+        margin-block: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+        
+        &__img{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &__face{
+                position: relative;
+                width: 40vw;
+                height: 40vw;
+                border-radius: 20000px;
+
+            }
+            &__verified{
+                position: absolute;
+                right: 30%;
+                top: 0;
+                
+                &__tick{
+                    position: absolute;
+                    right: 30%;
+                    top: 28%;
+                }
+            }
+        }
+
+        &>h3{
+            font-family: map-get($map: $fonts, $key: old-standard);
+            color: #222222;
+            font-size: 30px;
+            font-weight: 400;
+            line-height: 30px;
+            letter-spacing: -0.8999999761581421px;
+        }
+
+        &>strong{
+            font-family: $archivo-font;
+            color: #BDAC8D;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 15.23px;
+            letter-spacing: 2.799999952316284px;
+        }
+
+        &>p{
+            font-family: $archivo-font;
+            color: #777777;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
         }
     }
 }
