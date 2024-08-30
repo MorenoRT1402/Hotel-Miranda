@@ -27,7 +27,7 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
     }
 
     &__feature{
-        padding-top: 5.5rem;
+        padding-block: 5.5rem 3rem;
         padding-inline: 1rem;
         display: flex;
         flex-direction: column;

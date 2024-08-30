@@ -5,9 +5,9 @@ Error: Undefined variable: "$fonts".
 1: $archivo-font: map-get($map: $fonts, $key: archivo);
 2: $lateral-padding: 1.2rem;
 3: 
-4: .section-intro{
-5:     position: relative;
-6:     padding: 6rem $lateral-padding;
+4: .section{
+5:     &-intro{
+6:         position: relative;
 
 Backtrace:
 scss/comps.scss:1
@@ -65,4 +65,4 @@ scss/comps.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/comps.scss\A \A 1: $archivo-font: map-get($map: $fonts, $key: archivo);\A 2: $lateral-padding: 1.2rem;\A 3: \A 4: .section-intro{\A 5:     position: relative;\A 6:     padding: 6rem $lateral-padding;"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/comps.scss\A \A 1: $archivo-font: map-get($map: $fonts, $key: archivo);\A 2: $lateral-padding: 1.2rem;\A 3: \A 4: .section{\A 5:     &-intro{\A 6:         position: relative;"; }

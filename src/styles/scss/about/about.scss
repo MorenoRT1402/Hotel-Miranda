@@ -1,0 +1,7 @@
+@import 'about-intro', 'about-counter';
+
+.about{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}

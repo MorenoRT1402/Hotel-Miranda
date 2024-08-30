@@ -1,0 +1,41 @@
+.about__counter{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+
+    &__facts{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+
+        &__fact{
+            display: flex;
+            gap: 1rem;
+
+            &>section{
+                width: 80%;
+
+                &>h3{
+                    @extend .old-standard-text;
+                    font-size: 60px;
+                    line-height: 60px;
+                    letter-spacing: -1.7999999523162842px;
+                }
+
+                &>span{
+                    @extend .roboto-text;
+                    color: gray;
+                    font-size: 16px;
+                    line-height: 16px;
+                }
+            }
+        }
+    }
+
+    &>div{
+        & img{
+            width: 100%;
+        }
+    }
+}

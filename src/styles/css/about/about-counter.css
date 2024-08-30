@@ -1,0 +1,40 @@
+/*
+Sass::SyntaxError: ".about__counter__facts__fact > section > h3" failed to @extend ".old-standard-text".
+The selector ".old-standard-text" was not found.
+Use "@extend .old-standard-text !optional" if the extend should be able to fail.
+
+
+Backtrace:
+scss/about/about-counter.scss:20
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `block in each_value'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each_value'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:16:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:39:in `css_tree'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:468:in `update_stylesheet'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:449:in `on_file_changed'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/config.rb:28:in `call'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:117:in `block in _process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:116:in `_process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:25:in `block in loop_for'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop_for'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:85:in `_process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:51:in `block in start'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:18:in `block in new'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Sass::SyntaxError: \".about__counter__facts__fact > section > h3\" failed to @extend \".old-standard-text\".\A The selector \".old-standard-text\" was not found.\A Use \"@extend .old-standard-text !optional\" if the extend should be able to fail.\A "; }
