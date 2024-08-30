@@ -5,9 +5,9 @@ Error: Undefined variable: "$fonts".
 1: $old-standard-font: map-get($map: $fonts, $key: old-standard); 
 2: $archivo-font: map-get($map: $fonts, $key: archivo);
 3: $gap-value: 1rem;
-4: @mixin overlap($value){
-5:     margin-top: - ($gap-value + $value);
-6: }
+4: 
+5: @mixin overlap($value){
+6:     margin-top: - ($gap-value + $value);
 
 Backtrace:
 scss/home/home-rooms.scss:1
@@ -65,4 +65,4 @@ scss/home/home-rooms.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home/home-rooms.scss\A \A 1: $old-standard-font: map-get($map: $fonts, $key: old-standard); \A 2: $archivo-font: map-get($map: $fonts, $key: archivo);\A 3: $gap-value: 1rem;\A 4: @mixin overlap($value){\A 5:     margin-top: - ($gap-value + $value);\A 6: }"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home/home-rooms.scss\A \A 1: $old-standard-font: map-get($map: $fonts, $key: old-standard); \A 2: $archivo-font: map-get($map: $fonts, $key: archivo);\A 3: $gap-value: 1rem;\A 4: \A 5: @mixin overlap($value){\A 6:     margin-top: - ($gap-value + $value);"; }

@@ -1,3 +1,5 @@
+$tertiary-color: map-get($map: $theme-colors, $key: tertiary);
+
 @mixin swiperArrows($bgColor, $color, $content){
     background-color: $bgColor;
     color: $color;
@@ -29,6 +31,53 @@
     margin-block: 1.3rem .2rem;
 
     &>span{
-        background-color: map-get($map: $theme-colors, $key: tertiary);
+        background-color: $tertiary-color;
+    }
+}
+
+.nav-pagnum{
+    position: relative;
+    font-size: small;
+    display: flex;
+
+    &>.swiper-button-prev, &>.swiper-button-next, 
+    &>.swiper-pagination{
+        position: relative;
+        height: 100%;
+        color: black;
+        top: 0;
+        bottom: 0;
+        margin-top: 0;
+
+        &::after{
+            font-size: 150%;
+        }
+    }
+
+    &>#rooms_swiper-pagination{
+        bottom: 0;
+    }
+
+    & .swiper-pagination-bullet {
+        font-family: map-get($map: $fonts, $key: oswald);
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 19px;
+
+        width: auto;
+        height: auto;
+        padding: 5px 10px;
+        margin: 0 5px;
+        background-color: transparent;
+        color: black;
+        opacity: 1;
+        border-radius: 0;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    & .swiper-pagination-bullet-active {
+        background-color: $tertiary-color;
+        color: white;
     }
 }

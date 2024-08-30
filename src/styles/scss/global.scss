@@ -11,12 +11,13 @@ $fonts: (
     archivo: "Archivo",
     old-standard: "Old Standard TT",
     roboto: "Roboto",
+    oswald: "Oswald",
 );
 
 $desktop-size: 1000px;
 
 main{
-    padding-top: 3rem;
+    padding-block: 3rem;
 }
 
 .title{
