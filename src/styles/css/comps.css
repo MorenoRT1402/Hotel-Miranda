@@ -3,11 +3,11 @@ Error: Undefined variable: "$fonts".
         on line 1 of scss/comps.scss
 
 1: $archivo-font: map-get($map: $fonts, $key: archivo);
-2: $lateral-padding: 1.2rem;
-3: 
-4: .section{
-5:     &-intro{
-6:         position: relative;
+2: $old-standard-font: map-get($map: $fonts, $key: old-standard); 
+3: $font-roboto: map-get($map: $fonts, $key: roboto);
+4: 
+5: $lateral-padding: 1.2rem;
+6: 
 
 Backtrace:
 scss/comps.scss:1
@@ -65,4 +65,4 @@ scss/comps.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/comps.scss\A \A 1: $archivo-font: map-get($map: $fonts, $key: archivo);\A 2: $lateral-padding: 1.2rem;\A 3: \A 4: .section{\A 5:     &-intro{\A 6:         position: relative;"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/comps.scss\A \A 1: $archivo-font: map-get($map: $fonts, $key: archivo);\A 2: $old-standard-font: map-get($map: $fonts, $key: old-standard); \A 3: $font-roboto: map-get($map: $fonts, $key: roboto);\A 4: \A 5: $lateral-padding: 1.2rem;\A 6: "; }

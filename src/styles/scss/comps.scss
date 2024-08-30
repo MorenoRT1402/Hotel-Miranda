@@ -1,4 +1,7 @@
 $archivo-font: map-get($map: $fonts, $key: archivo);
+$old-standard-font: map-get($map: $fonts, $key: old-standard); 
+$font-roboto: map-get($map: $fonts, $key: roboto);
+
 $lateral-padding: 1.2rem;
 
 .section{
@@ -20,7 +23,7 @@ $lateral-padding: 1.2rem;
         }
     
         &>h2{
-            font-family: map-get($map: $fonts, $key: old-standard);
+            font-family: $old-standard-font;
             font-size: 56px;
             font-weight: 400;
             line-height: 60px;
@@ -69,6 +72,164 @@ $lateral-padding: 1.2rem;
             font-size: 56px;
             line-height: 49.44px;
             letter-spacing: -1.0499999523162842px;
+        }
+    }
+}
+
+
+$gap-value: 1rem;
+@mixin overlap($value){
+    margin-top: - ($gap-value + $value);
+}
+
+.room{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__img{
+        @include overlap(1.8);
+        width: 100%;
+    }
+
+    &__services{
+        position: relative;
+        z-index: 2;
+    }
+
+    &__description{
+        $padding: 1.6rem;
+
+        @include overlap($padding);
+        z-index: 3;
+        background-color: white;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding-block: $padding;
+
+        &>h4{
+            font-family: $old-standard-font;
+            font-size: 28px;
+            font-weight: 400;
+            line-height: 36px;
+            letter-spacing: -1.2000000476837158px;
+        }
+
+        &>p{
+            @extend .roboto-text;
+            line-height: 24px;
+            text-align: center;
+        }
+
+        &__price{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            color: map-get($map: $theme-colors, $key: tertiary);
+
+            font-family: $archivo-font;
+            font-weight: 700;
+            line-height: 43px;
+            text-align: center;
+
+            &__number{
+                font-size: 32px
+            }
+
+            &__night{
+                font-size: 13px
+            }
+
+            &__book{
+                margin-left: 1rem;
+                font-family: $archivo-font;
+                font-size: 16px;
+                line-height: 17.41px;
+                color: #BDBDBD;
+            }
+        }
+
+    }
+
+    &.--variant{
+        &>.room{
+            &__services{
+                position: absolute;
+                top: 46%;
+                z-index: 4;
+            }
+
+            &__img{
+                margin-top: 0;
+            }
+
+            &__description{
+                margin-top: 0;
+            }
+        }
+    }
+
+}
+
+.availability-form{
+    width: 100%;
+    background-color: map-get($map: $theme-colors, $key: quaternary);
+    display: flex;
+    flex-direction: column;
+    padding: 2.3rem 1.5rem;
+
+    gap: 2.75rem;
+
+    &>*{
+        color: white;
+        font-family: $font-roboto;
+    }
+
+    &>label{
+        margin-bottom: -1.5rem;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.75px;
+    }
+
+    &>div{
+        display: flex;
+        gap: .5rem;
+        border-bottom: 2px solid map-get($map: $theme-colors, $key: tertiary);
+        padding-bottom: .5rem;
+        
+        &>input{
+            background-color: transparent;
+            border: 0;
+            outline: none;
+            pointer-events: none;
+        }
+    }
+
+    &>button{
+        width: 75%;
+    }
+
+    &.--variant{
+        background-color: white;
+        
+        &>label{
+            color: black;
+            margin-bottom: -2rem;
+        }
+        &>div{
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            background-color: #F8F8F8;
+            border: 0;
+            padding: 1.5rem;
+        }
+        &>button{
+            width: 100%;
         }
     }
 }

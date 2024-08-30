@@ -3,7 +3,7 @@ Error: Undefined variable: "$fonts".
         on line 1 of scss/home/home-tour.scss
         from line 1 of scss/home/home.scss
 
-1: @import 'home-tour', 'home-availability-form', 
+1: @import 'home-tour', 
 2: 'home-about', 'home-rooms', 'home-intro-video', 
 3: 'home-food-menu', 'home-metrics';
 
@@ -77,4 +77,4 @@ scss/home/home.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home/home-tour.scss\A         from line 1 of scss/home/home.scss\A \A 1: @import 'home-tour', 'home-availability-form', \A 2: 'home-about', 'home-rooms', 'home-intro-video', \A 3: 'home-food-menu', 'home-metrics';"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home/home-tour.scss\A         from line 1 of scss/home/home.scss\A \A 1: @import 'home-tour', \A 2: 'home-about', 'home-rooms', 'home-intro-video', \A 3: 'home-food-menu', 'home-metrics';"; }

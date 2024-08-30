@@ -1,0 +1,24 @@
+.room-details{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1rem;
+
+    &>img{
+        width: 100%;
+    }
+
+    &__availability{
+        width: 100%;
+        font-weight: 700;
+
+        &>h4{
+            font-family: map-get($map: $fonts, $key: roboto);
+            font-size: 18px;
+            line-height: 19.58px;
+            letter-spacing: -0.5400000214576721px;
+            text-align: center;
+        }
+    }
+}

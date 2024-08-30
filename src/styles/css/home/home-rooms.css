@@ -1,16 +1,21 @@
 /*
 Error: Undefined variable: "$fonts".
-        on line 1 of scss/home/home-rooms.scss
+        on line 26 of scss/home/home-rooms.scss
 
-1: $old-standard-font: map-get($map: $fonts, $key: old-standard); 
-2: $archivo-font: map-get($map: $fonts, $key: archivo);
-3: $gap-value: 1rem;
-4: 
-5: @mixin overlap($value){
-6:     margin-top: - ($gap-value + $value);
+21:         line-height: 15.23px;
+22:         letter-spacing: 2.799999952316284px;
+23:     }
+24: 
+25:     &>h3{
+26:         font-family: map-get($map: $fonts, $key: old-standard);
+27:         font-size: 56px;
+28:         font-weight: 400;
+29:         line-height: 60px;
+30:         letter-spacing: -1.2000000476837158px;
+31:     }
 
 Backtrace:
-scss/home/home-rooms.scss:1
+scss/home/home-rooms.scss:26
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -22,7 +27,29 @@ scss/home/home-rooms.scss:1
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util.rb:92:in `map_hash'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:130:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:478:in `visit_variable'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
@@ -65,4 +92,4 @@ scss/home/home-rooms.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/home/home-rooms.scss\A \A 1: $old-standard-font: map-get($map: $fonts, $key: old-standard); \A 2: $archivo-font: map-get($map: $fonts, $key: archivo);\A 3: $gap-value: 1rem;\A 4: \A 5: @mixin overlap($value){\A 6:     margin-top: - ($gap-value + $value);"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 26 of scss/home/home-rooms.scss\A \A 21:         line-height: 15.23px;\A 22:         letter-spacing: 2.799999952316284px;\A 23:     }\A 24: \A 25:     &>h3{\A 26:         font-family: map-get($map: $fonts, $key: old-standard);\A 27:         font-size: 56px;\A 28:         font-weight: 400;\A 29:         line-height: 60px;\A 30:         letter-spacing: -1.2000000476837158px;\A 31:     }"; }

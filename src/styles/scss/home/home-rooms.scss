@@ -1,11 +1,3 @@
-$old-standard-font: map-get($map: $fonts, $key: old-standard); 
-$archivo-font: map-get($map: $fonts, $key: archivo);
-$gap-value: 1rem;
-
-@mixin overlap($value){
-    margin-top: - ($gap-value + $value);
-}
-
 @mixin swiperArrows($bgColor, $color, $content){
     background-color: $bgColor;
     color: $color;
@@ -31,103 +23,10 @@ $gap-value: 1rem;
     }
 
     &>h3{
-        font-family: $old-standard-font;
+        font-family: map-get($map: $fonts, $key: old-standard);
         font-size: 56px;
         font-weight: 400;
         line-height: 60px;
         letter-spacing: -1.2000000476837158px;
     }
-}
-
-.room{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    &__img{
-        @include overlap(1.8);
-        width: 100%;
-    }
-
-    &__services{
-        position: relative;
-        z-index: 2;
-    }
-
-    &__description{
-        $padding: 1.6rem;
-
-        @include overlap($padding);
-        z-index: 3;
-        background-color: white;
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: 1rem;
-        padding-block: $padding;
-
-        &>h4{
-            font-family: $old-standard-font;
-            font-size: 28px;
-            font-weight: 400;
-            line-height: 36px;
-            letter-spacing: -1.2000000476837158px;
-        }
-
-        &>p{
-            @extend .roboto-text;
-            line-height: 24px;
-            text-align: center;
-        }
-
-        &__price{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-            color: map-get($map: $theme-colors, $key: tertiary);
-
-            font-family: $archivo-font;
-            font-weight: 700;
-            line-height: 43px;
-            text-align: center;
-
-            &__number{
-                font-size: 32px
-            }
-
-            &__night{
-                font-size: 13px
-            }
-
-            &__book{
-                margin-left: 1rem;
-                font-family: map-get($map: $fonts, $key: archivo);
-                font-size: 16px;
-                line-height: 17.41px;
-                color: #BDBDBD;
-            }
-        }
-
-    }
-
-    &.--variant{
-        &>.room{
-            &__services{
-                position: absolute;
-                top: 46%;
-                z-index: 4;
-            }
-
-            &__img{
-                margin-top: 0;
-            }
-
-            &__description{
-                margin-top: 0;
-            }
-        }
-    }
-
 }
