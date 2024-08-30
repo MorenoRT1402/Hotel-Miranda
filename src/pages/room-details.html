@@ -52,7 +52,7 @@
             </section>
         </section>
 
-        <section class="room-details">
+        <section class="room-details" id="room-details">
             <section class="section-header">
                 <strong>DOUBLE BED</strong>
                 <h3>Luxury Double Bed</h3>
@@ -101,9 +101,9 @@
                 eius modi tempora incidunt ut labore et dolore 
                 magnam aliquam quaerat voluptatem.
             </p>
-            <section class="room-details__amenities">
-                <h2 class="room-details__amenities__title">Amenities</h2>
-                <div class="room-details__amenities__div"></div>
+            <section class="room-details__section" id="room-details__amenities">
+                <h2 id="room-details__amenities__title">Amenities</h2>
+                <div class="room-details__section__div"></div>
                 <section class="room-details__amenities__list">
                     <article>
                         <img src="/public/images/amenities/air-conditioner.svg" alt="">
@@ -163,7 +163,7 @@
                     </article>                 
                 </section>
             </section>
-            <section class="room-details__founder">
+            <section class="room-details__founder" id="room-details__founder">
                 <div class="room-details__founder__img">
                     <img class="room-details__founder__img__face" src="https://picsum.photos/300/200" alt="">
                     <div class="room-details__founder__img__verified">
@@ -177,6 +177,44 @@
                     adipisicing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore.</p>
             </section>
+            <section class="room-details__section" id="room-details__cancellation">
+                <h2>Cancellation</h2>
+                <div class="room-details__section__div"></div>
+                <p>Phasellus volutpat neque a tellus venenatis, a 
+                    euismod augue facilisis. Fusce ut metus 
+                    mattis, consequat metus nec, luctus lectus. 
+                    Pellentesque orci quis hendrerit sed eu dolor. 
+                    Cancel up to 14 days to get a full refund.</p>
+            </section>
+            <section class="room-details__section" id="room-details__related-rooms">
+                <h2>Related Rooms</h2>
+                <div class="room-details__section__div"></div>
+                <div class="swiper swiper-navigation">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <article class="room --variant" id="room-details__related-rooms__room">
+                                <img class="room__services" id="room-details__related-rooms__room__services" src="/public/images/Frame 57.svg" alt="services-">
+                                <img class="room__img" src="https://picsum.photos/303/203" alt="">
+                                <section class="room__description">
+                                    <h4>Minimal Duplex Room</h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur 
+                                        adipisicing elit, sed do eiusmod tempor 
+                                        incididunt ut labore et dolore.</p>
+                                    <section class="room__description__price">
+                                        <h4 class="room__description__price__number">$345</h4>
+                                        <span class="room__description__price__night">/Night</span>
+                                        <span class="room__description__price__book">Book now</span>
+                                    </section>
+                                </section>
+                            </article>
+                        </div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/303/203" alt=""></div>
+                        <div class="swiper-slide"><img src="https://picsum.photos/304/204" alt=""></div>
+                    </div>    
+                    <div class="swiper-button-prev --custom" id="room-details__related-rooms__room__arrow-prev"></div>
+                    <div class="swiper-button-next --custom" id="room-details__related-rooms__room__arrow-next"></div>
+                </div> 
+        </section>
         </section>
     </main>
 
@@ -254,5 +292,6 @@
     <script src="/src/features/deployable-menu.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/src/features/swiper/swiper-nav-pagnum.js"></script>
+    <script src="/src/features/swiper/swiper-navigation.js"></script>
 </body>
 </html>

@@ -25,35 +25,40 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
         }
     }
 
-    &__amenities{
+    &__section{
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 1rem;
         padding-block: 2rem;
-
-        &__title{
+        
+        &>h2{
             @extend .old-standard-text;
             font-size: 30px;
             line-height: 30px;
         }
+
         &__div{
-            width: 100%;
-            height: 1px;
-            background-color: #F1F1F1;
-            margin-bottom: 1rem;
+                width: 100%;
+                height: 1px;
+                background-color: #F1F1F1;
+                margin-bottom: 1rem;
         }
+    }
+
+    &__amenities{
         &__list{
 
             &>article{
                 min-width: 49%;
                 display: flex;
-                gap: .5rem;
+                gap: 1rem;
                 display: inline-block;
+                margin-block: .3rem;
 
                 &>span{
                     font-family: $roboto-font;
-                    color: #7777;
+                    color: rgb(110, 107, 107);
                     font-size: 15px;
                     font-weight: 500;
                     line-height: 17.58px;
@@ -63,7 +68,7 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
     }
 
     &__founder{
-        margin-block: 2rem;
+        margin-block: 3rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
@@ -112,13 +117,37 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
             line-height: 15.23px;
             letter-spacing: 2.799999952316284px;
         }
+    }
+}
 
-        &>p{
+#room-details{
+    & p{
+        font-family: $roboto-font;
+        color: #777777;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+    }
+
+    &__founder{
+        & p{
             font-family: $archivo-font;
             color: #777777;
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
+        }
+    }
+
+    &__related-rooms{
+        &__room{
+            &__services{
+                top: 41%;
+            }
+
+            &__arrow-prev, &__arrow-next{
+                top: 42%;
+            }
         }
     }
 }

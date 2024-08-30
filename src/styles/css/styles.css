@@ -69,7 +69,7 @@ main {
   font-family: "Archivo";
   color: #777777; }
 
-.old-standard-text, .section-header__title, .section-header > h3, .footer__main h4, .home__food-menu > h3, .home__food-menu__food__info > h4, .about__intro > p, .about__intro__tour__info > h3, .about__counter__facts__fact > section > h3, .room-details__amenities__title {
+.old-standard-text, .section-header__title, .section-header > h3, .footer__main h4, .home__food-menu > h3, .home__food-menu__food__info > h4, .about__intro > p, .about__intro__tour__info > h3, .about__counter__facts__fact > section > h3, .room-details__section > h2 {
   font-family: "Old Standard TT";
   color: #222222;
   font-weight: 400; }
@@ -768,33 +768,34 @@ main {
       line-height: 19.58px;
       letter-spacing: -0.5400000214576721px;
       text-align: center; }
-  .room-details__amenities {
+  .room-details__section {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     padding-block: 2rem; }
-    .room-details__amenities__title {
+    .room-details__section > h2 {
       font-size: 30px;
       line-height: 30px; }
-    .room-details__amenities__div {
+    .room-details__section__div {
       width: 100%;
       height: 1px;
       background-color: #F1F1F1;
       margin-bottom: 1rem; }
-    .room-details__amenities__list > article {
-      min-width: 49%;
-      display: flex;
-      gap: .5rem;
-      display: inline-block; }
-      .room-details__amenities__list > article > span {
-        font-family: "Roboto";
-        color: #7777;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 17.58px; }
+  .room-details__amenities__list > article {
+    min-width: 49%;
+    display: flex;
+    gap: 1rem;
+    display: inline-block;
+    margin-block: .3rem; }
+    .room-details__amenities__list > article > span {
+      font-family: "Roboto";
+      color: #6e6b6b;
+      font-size: 15px;
+      font-weight: 500;
+      line-height: 17.58px; }
   .room-details__founder {
-    margin-block: 2rem;
+    margin-block: 3rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -831,12 +832,23 @@ main {
       font-weight: 700;
       line-height: 15.23px;
       letter-spacing: 2.799999952316284px; }
-    .room-details__founder > p {
-      font-family: "Archivo";
-      color: #777777;
-      font-size: 16px;
-      font-weight: 400;
-      line-height: 24px; }
+
+#room-details p {
+  font-family: "Roboto";
+  color: #777777;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+#room-details__founder p {
+  font-family: "Archivo";
+  color: #777777;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px; }
+#room-details__related-rooms__room__services {
+  top: 41%; }
+#room-details__related-rooms__room__arrow-prev, #room-details__related-rooms__room__arrow-next {
+  top: 42%; }
 
 html, * {
   box-sizing: border-box;
