@@ -1,14 +1,13 @@
 $quaternary-color: map-get($map: $theme-colors, $key: quaternary);
-$old-standard-font: map-get($map: $fonts, $key: old-standard);
 $archivo-font: map-get($map: $fonts, $key: archivo);
 
 @mixin facilities-standard(){
-    font-family: $old-standard-font;
+    font-family: map-get($map: $fonts, $key: old-standard);
     color: $quaternary-color;
     font-weight: 400;
 }
 
-.home__facilities{
+.facilities{
     @extend .section-common;
     padding: 1rem;
 
@@ -64,6 +63,27 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
             font-size: 14px;
             font-weight: 400;
             line-height: 24px;
+        }
+    }
+
+    &.--dark{
+        background-color: $quaternary-color;
+
+        &>*{
+            color: white;
+        }
+
+        & .facilities__feature{
+            background-color: #292929;
+            &>*{
+                color: white;
+            }
+
+            &__number{
+                color: $quaternary-color;
+                z-index: 1;
+                opacity: .72;
+            }
         }
     }
 }

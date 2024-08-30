@@ -108,5 +108,11 @@
         flex-direction: column;
         gap: 1rem;
         padding: 1rem;
+
+        @extend .roboto-text;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18.75px;
+        letter-spacing: -0.47999998927116394px;
     }
 }

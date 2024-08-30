@@ -34,10 +34,10 @@ main {
   .title.--variant {
     gap: 1rem; }
 
-.section-base, .section-common, .home__rooms, .home__facilities, .home__food-menu {
+.section-base, .section-common, .facilities, .home__rooms, .home__food-menu {
   margin-top: 2rem; }
 
-.section-common, .home__rooms, .home__facilities, .home__food-menu {
+.section-common, .facilities, .home__rooms, .home__food-menu {
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -65,7 +65,7 @@ main {
   transform: scale(2);
   opacity: .12; }
 
-.archivo-header, .footer__main > p, .home__about__intro > p, .home__rooms > p, .home__facilities > strong, .home__food-menu > strong, .about__intro__tour__info > strong, .about__intro__tour__info > p {
+.archivo-header, .footer__main > p, .facilities > strong, .home__about__intro > p, .home__rooms > p, .home__food-menu > strong, .about__intro__tour__info > strong, .about__intro__tour__info > p {
   font-family: "Archivo";
   color: #777777; }
 
@@ -74,7 +74,7 @@ main {
   color: #222222;
   font-weight: 400; }
 
-.roboto-text, .home__about__info > article > section > p, .home__rooms__room__description > p, .home__food-menu__food__info > p {
+.roboto-text, .footer__policy, .home__about__info > article > section > p, .home__rooms__room__description > p, .home__food-menu__food__info > p {
   font-family: "Roboto";
   color: #222222;
   font-size: 14px;
@@ -145,7 +145,7 @@ main {
 
 .swiper-pagination.--custom {
   position: relative;
-  margin-top: 1rem; }
+  margin-block: 1.3rem .2rem; }
   .swiper-pagination.--custom > span {
     background-color: #BEAD8E; }
 
@@ -166,7 +166,7 @@ main {
         font-family: "Archivo";
         font-size: 1.1em;
         font-weight: bold;
-        margin: .33em;
+        margin-block: .7rem;
         text-decoration: none;
         color: inherit; }
     .header__nav.--invisible {
@@ -241,7 +241,70 @@ main {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  padding: 1rem;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.75px;
+  letter-spacing: -0.47999998927116394px; }
+
+.facilities {
   padding: 1rem; }
+  .facilities > strong {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 15.23px;
+    letter-spacing: 2.799999952316284px; }
+  .facilities > h3 {
+    font-family: "Old Standard TT";
+    color: #222222;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 60px;
+    letter-spacing: -1.2000000476837158px; }
+  .facilities__feature {
+    padding-top: 5.5rem;
+    padding-inline: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    align-items: start;
+    text-align: start; }
+    .facilities__feature > span {
+      transform: scale(1);
+      right: 1rem;
+      top: 0;
+      font-family: "Archivo";
+      color: #222222;
+      font-size: 120px;
+      font-weight: 700;
+      line-height: 130px; }
+    .facilities__feature > img:hover {
+      transform: scale(1.05); }
+    .facilities__feature > h4 {
+      font-family: "Old Standard TT";
+      color: #222222;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 30px;
+      letter-spacing: -0.8999999761581421px; }
+    .facilities__feature > p {
+      font-family: "Archivo";
+      color: #777777;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px; }
+  .facilities.--dark {
+    background-color: #222222; }
+    .facilities.--dark > * {
+      color: white; }
+    .facilities.--dark .facilities__feature {
+      background-color: #292929; }
+      .facilities.--dark .facilities__feature > * {
+        color: white; }
+      .facilities.--dark .facilities__feature__number {
+        color: #222222;
+        z-index: 1;
+        opacity: .72; }
 
 .home__tour {
   gap: 2rem; }
@@ -437,53 +500,6 @@ main {
   .home__intro-video__player {
     width: 100%;
     border: 0; }
-
-.home__facilities {
-  padding: 1rem; }
-  .home__facilities > strong {
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 15.23px;
-    letter-spacing: 2.799999952316284px; }
-  .home__facilities > h3 {
-    font-family: "Old Standard TT";
-    color: #222222;
-    font-weight: 400;
-    font-size: 56px;
-    line-height: 60px;
-    letter-spacing: -1.2000000476837158px; }
-  .home__facilities__feature {
-    padding-top: 5.5rem;
-    padding-inline: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1.4rem;
-    align-items: start;
-    text-align: start; }
-    .home__facilities__feature > span {
-      transform: scale(1);
-      right: 1rem;
-      top: 0;
-      font-family: "Archivo";
-      color: #222222;
-      font-size: 120px;
-      font-weight: 700;
-      line-height: 130px; }
-    .home__facilities__feature > img:hover {
-      transform: scale(1.05); }
-    .home__facilities__feature > h4 {
-      font-family: "Old Standard TT";
-      color: #222222;
-      font-weight: 400;
-      font-size: 30px;
-      line-height: 30px;
-      letter-spacing: -0.8999999761581421px; }
-    .home__facilities__feature > p {
-      font-family: "Archivo";
-      color: #777777;
-      font-size: 14px;
-      font-weight: 400;
-      line-height: 24px; }
 
 .home__food-menu {
   text-align: left;

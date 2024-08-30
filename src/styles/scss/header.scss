@@ -20,7 +20,7 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
                     font-family: $font-archivo;
                     font-size: 1.1em;
                     font-weight: bold;
-                    margin: .33em;
+                    margin-block: .7rem;
                     text-decoration: none;
                     color: inherit;
                 }
