@@ -1,0 +1,51 @@
+#blog{
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        &__data{
+            padding: 2rem;
+            display: flex;
+            gap: 1.5rem;
+            align-items: start;
+
+            &__info{
+                position: relative;
+                font-weight: 400;
+
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                &>strong{
+                    font-family: map-get($map: $fonts, $key: old-standard);
+                    color: map-get($map: $theme-colors, $key: quaternary);
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+                &>p{
+                    font-family: map-get($map: $fonts, $key: roboto);
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    width: 57%;
+                }
+
+                &>.bg{
+                    font-family: map-get($map: $fonts, $key: roboto);
+                    font-size: 100px;
+                    font-weight: 700;
+                    line-height: 234.38px;
+                    letter-spacing: -6px;
+
+                    &.--right-top{
+                        $value: 3.6rem;
+                        top: -$value;
+                        right: $value;
+                    }
+                }
+            }
+        }
+    }
+}

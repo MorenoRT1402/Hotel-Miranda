@@ -57,13 +57,14 @@ main {
   .standard-button.--transparent {
     background-color: transparent; }
 
-.bg-right-top {
+.bg {
   position: absolute;
   z-index: -1;
-  top: 2.3rem;
-  right: 2.8rem;
   transform: scale(2);
   opacity: .12; }
+  .bg.--right-top {
+    top: 2.3rem;
+    right: 2.8rem; }
 
 .archivo-header {
   font-family: "Archivo";

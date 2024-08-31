@@ -57,13 +57,14 @@ main {
   .standard-button.--transparent {
     background-color: transparent; }
 
-.bg-right-top {
+.bg {
   position: absolute;
   z-index: -1;
-  top: 2.3rem;
-  right: 2.8rem;
   transform: scale(2);
   opacity: .12; }
+  .bg.--right-top {
+    top: 2.3rem;
+    right: 2.8rem; }
 
 .archivo-header, .section-header__strong, .section-header > strong, .footer__main > p, .facilities > strong, .home__about__intro > p, .home__rooms > p, .home__food-menu > strong, .about__intro__tour__info > strong, .about__intro__tour__info > p {
   font-family: "Archivo";
@@ -882,6 +883,41 @@ main {
   display: flex;
   flex-direction: column;
   gap: 2rem; }
+
+#blog__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+  #blog__contact__data {
+    padding: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    align-items: start; }
+    #blog__contact__data__info {
+      position: relative;
+      font-weight: 400;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem; }
+      #blog__contact__data__info > strong {
+        font-family: "Old Standard TT";
+        color: #222222;
+        font-size: 20px;
+        line-height: 24px; }
+      #blog__contact__data__info > p {
+        font-family: "Roboto";
+        font-size: 14px;
+        line-height: 16.41px;
+        width: 57%; }
+      #blog__contact__data__info > .bg {
+        font-family: "Roboto";
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 234.38px;
+        letter-spacing: -6px; }
+        #blog__contact__data__info > .bg.--right-top {
+          top: -3.6rem;
+          right: 3.6rem; }
 
 html, * {
   box-sizing: border-box;
