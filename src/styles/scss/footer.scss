@@ -89,11 +89,8 @@
                             font-size: 20px;
                         }
                         &>span{
-                            font-family: map-get($map: $fonts, $key: roboto);
-                            font-size: 14px;
-                            font-weight: 400;
+                            @extend .paragraph;
                             line-height: 16.41px;
-                            color: #777777;
                         }
                     }
                 }

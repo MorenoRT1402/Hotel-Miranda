@@ -1,0 +1,40 @@
+#offers{
+    &__list{
+        width: 100%;
+        padding: 1rem;
+
+        &__offer{
+            &>div{
+                position: relative;
+
+                &>img{
+                    width: 100%;
+                }
+            }
+            &__prices{
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                padding: 1rem;
+                
+                &>*{
+                    justify-content: end;
+                }
+            }
+            &__info{
+                padding: 1.4rem;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                box-shadow: 0px 14px 24px 0px #B8B8B81A;
+            }
+        }
+    }
+
+    &__popular{
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

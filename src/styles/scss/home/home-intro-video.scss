@@ -30,9 +30,7 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
 
     &>p{
         font-family: $archivo-font;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 24px;
+        @extend .paragraph;
         color: map-get($map: $theme-colors, $key: septenary);
     }
 

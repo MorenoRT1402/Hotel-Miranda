@@ -30,9 +30,7 @@ $weight-normal: 400;
         }
 
         &__description{
-            font-size: 14px;
-            font-weight: $weight-normal;
-            line-height: 24px;
+            @extend .paragraph;
         }
     }
 
@@ -64,11 +62,7 @@ $weight-normal: 400;
                 position: relative;
 
                 &.--dark{
-                    background-color: map-get($map: $theme-colors, $key: quaternary);
-
-                    &>*{
-                        color: white
-                    }
+                    @extend .--dark;
                 }
 
                 &>p{

@@ -80,7 +80,22 @@ main {
   font-size: 14px;
   font-weight: 400; }
 
+.paragraph {
+  font-family: "Roboto";
+  color: #777777;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px; }
+
 .--invisible {
   display: none; }
+
+.--line-through {
+  text-decoration: line-through; }
+
+.--dark {
+  background-color: #222222; }
+  .--dark > * {
+    color: white; }
 
 /*# sourceMappingURL=global.css.map */

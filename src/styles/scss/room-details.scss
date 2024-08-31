@@ -46,27 +46,6 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
         }
     }
 
-    &__amenities{
-        &__list{
-
-            &>article{
-                min-width: 49%;
-                display: flex;
-                gap: 1rem;
-                display: inline-block;
-                margin-block: .3rem;
-
-                &>span{
-                    font-family: $roboto-font;
-                    color: rgb(110, 107, 107);
-                    font-size: 15px;
-                    font-weight: 500;
-                    line-height: 17.58px;
-                }
-            }
-        }
-    }
-
     &__founder{
         margin-block: 3rem;
         display: flex;

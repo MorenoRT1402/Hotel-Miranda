@@ -72,6 +72,28 @@ $lateral-padding: 1.2rem;
             font-size: 56px;
             line-height: 49.44px;
             letter-spacing: -1.0499999523162842px;
+
+            &.--small{
+                font-size: 40px;
+                line-height: 48px;
+                letter-spacing: -1.440000057220459px;
+            }
+        }
+
+        &.--center{
+            text-align: center;
+        }
+
+        &.--theme{
+            & .section-header__strong, &>strong{
+                color: map-get($map: $theme-colors, $key: senary);
+            }
+        }
+
+        &.--dark{
+            &>*{
+                color: white;
+            }
         }
     }
 }
@@ -87,6 +109,7 @@ $gap-value: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: white;
 
     &__img{
         @include overlap(1.8);
@@ -112,6 +135,7 @@ $gap-value: 1rem;
 
         &>h4{
             font-family: $old-standard-font;
+            color: black;
             font-size: 28px;
             font-weight: 400;
             line-height: 36px;
@@ -151,8 +175,24 @@ $gap-value: 1rem;
                 line-height: 17.41px;
                 color: #BDBDBD;
             }
-        }
 
+            &.--small{
+                &>.room__description__price{
+                    &__number{
+                        font-size: 23px;
+                        line-height: 25.02px; 
+                    }
+                    &__night{
+                        font-size: 11px;
+                        line-height: 11.97px;
+                    }
+                }
+                               
+            }
+            &.--red{
+                color: #DE5777;
+            }
+        }
     }
 
     &.--variant{
@@ -233,4 +273,23 @@ $gap-value: 1rem;
         }
     }
 
+}
+
+.amenities{
+    &__list{
+
+        &>article{
+            min-width: 49%;
+            display: inline-block;
+            margin-block: .3rem;
+
+            &>span{
+                font-family: $font-roboto;
+                color: rgb(110, 107, 107);
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 17.58px;
+            }
+        }
+    }
 }

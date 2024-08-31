@@ -1,0 +1,27 @@
+#offers__list {
+  width: 100%;
+  padding: 1rem; }
+  #offers__list__offer > div {
+    position: relative; }
+    #offers__list__offer > div > img {
+      width: 100%; }
+  #offers__list__offer__prices {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 1rem; }
+    #offers__list__offer__prices > * {
+      justify-content: end; }
+  #offers__list__offer__info {
+    padding: 1.4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 0px 14px 24px 0px #B8B8B81A; }
+#offers__popular {
+  padding: 3rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; }
+
+/*# sourceMappingURL=offers.css.map */
