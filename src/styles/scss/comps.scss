@@ -237,17 +237,7 @@ $gap-value: 1rem;
     }
 
     &>div{
-        display: flex;
-        gap: .5rem;
-        border-bottom: 2px solid map-get($map: $theme-colors, $key: tertiary);
-        padding-bottom: .5rem;
-        
-        &>input{
-            background-color: transparent;
-            border: 0;
-            outline: none;
-            pointer-events: none;
-        }
+        @extend .input;
     }
 
     &>button{
@@ -262,17 +252,36 @@ $gap-value: 1rem;
             margin-bottom: -2rem;
         }
         &>div{
-            flex-direction: row-reverse;
-            justify-content: space-between;
-            background-color: #F8F8F8;
-            border: 0;
-            padding: 1.5rem;
+            @extend .input.--variant;
         }
         &>button{
             width: 100%;
         }
     }
 
+}
+
+.input{
+    display: flex;
+    align-items: start;
+    gap: .5rem;
+    border-bottom: 2px solid map-get($map: $theme-colors, $key: tertiary);
+    padding-bottom: .5rem;
+    
+    &>input, &>textarea{
+        flex: 1;
+        background-color: transparent;
+        border: 0;
+        outline: none;
+        pointer-events: none;
+    }
+
+    &.--variant{
+        @extend .input;
+        background-color: #F8F8F8;
+        border: 0;
+        padding: 1.5rem;
+    }   
 }
 
 .amenities{

@@ -91,6 +91,10 @@ main {
 .--invisible {
   display: none; }
 
+.--row-reverse, #room-details__availability > form > div {
+  display: flex;
+  flex-direction: row-reverse; }
+
 .--line-through {
   text-decoration: line-through; }
 
@@ -242,16 +246,6 @@ main {
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px; }
-  .availability-form > div {
-    display: flex;
-    gap: .5rem;
-    border-bottom: 2px solid #BEAD8E;
-    padding-bottom: .5rem; }
-    .availability-form > div > input {
-      background-color: transparent;
-      border: 0;
-      outline: none;
-      pointer-events: none; }
   .availability-form > button {
     width: 75%; }
   .availability-form.--variant {
@@ -259,14 +253,25 @@ main {
     .availability-form.--variant > label {
       color: black;
       margin-bottom: -2rem; }
-    .availability-form.--variant > div {
-      flex-direction: row-reverse;
-      justify-content: space-between;
-      background-color: #F8F8F8;
-      border: 0;
-      padding: 1.5rem; }
     .availability-form.--variant > button {
       width: 100%; }
+
+.input, .availability-form > div, .input.--variant, .availability-form.--variant > div, #blog__form > div {
+  display: flex;
+  align-items: start;
+  gap: .5rem;
+  border-bottom: 2px solid #BEAD8E;
+  padding-bottom: .5rem; }
+  .input > input, .availability-form > div > input, .input.--variant > input, .availability-form.--variant > div > input, #blog__form > div > input, .input > textarea, .availability-form > div > textarea, .input.--variant > textarea, .availability-form.--variant > div > textarea, #blog__form > div > textarea {
+    flex: 1;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    pointer-events: none; }
+  .input.--variant, .availability-form > div.--variant, .availability-form.--variant > div, #blog__form > div {
+    background-color: #F8F8F8;
+    border: 0;
+    padding: 1.5rem; }
 
 .amenities__list > article {
   min-width: 49%;
@@ -779,15 +784,6 @@ main {
   gap: 1rem; }
   .room-details > img {
     width: 100%; }
-  .room-details__availability {
-    width: 100%;
-    font-weight: 700; }
-    .room-details__availability > h4 {
-      font-family: "Roboto";
-      font-size: 18px;
-      line-height: 19.58px;
-      letter-spacing: -0.5400000214576721px;
-      text-align: center; }
   .room-details__section {
     width: 100%;
     display: flex;
@@ -847,6 +843,15 @@ main {
   font-size: 16px;
   font-weight: 400;
   line-height: 24px; }
+#room-details__availability {
+  width: 100%;
+  font-weight: 700; }
+  #room-details__availability > h4 {
+    font-family: "Roboto";
+    font-size: 18px;
+    line-height: 19.58px;
+    letter-spacing: -0.5400000214576721px;
+    text-align: center; }
 #room-details__founder p {
   font-family: "Archivo";
   color: #777777;
@@ -884,40 +889,55 @@ main {
   flex-direction: column;
   gap: 2rem; }
 
-#blog__contact {
+#blog {
+  padding: 4rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem; }
-  #blog__contact__data {
-    padding: 2rem;
+  gap: 1rem; }
+  #blog__contact {
     display: flex;
-    gap: 1.5rem;
-    align-items: start; }
-    #blog__contact__data__info {
-      position: relative;
-      font-weight: 400;
+    flex-direction: column; }
+    #blog__contact__data {
+      padding: 2rem;
       display: flex;
-      flex-direction: column;
-      gap: 2rem; }
-      #blog__contact__data__info > strong {
-        font-family: "Old Standard TT";
-        color: #222222;
-        font-size: 20px;
-        line-height: 24px; }
-      #blog__contact__data__info > p {
-        font-family: "Roboto";
-        font-size: 14px;
-        line-height: 16.41px;
-        width: 57%; }
-      #blog__contact__data__info > .bg {
-        font-family: "Roboto";
-        font-size: 100px;
-        font-weight: 700;
-        line-height: 234.38px;
-        letter-spacing: -6px; }
-        #blog__contact__data__info > .bg.--right-top {
-          top: -3.6rem;
-          right: 3.6rem; }
+      gap: 1.5rem;
+      align-items: start;
+      margin-bottom: 6rem; }
+      #blog__contact__data__info {
+        position: relative;
+        font-weight: 400;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem; }
+        #blog__contact__data__info > strong {
+          font-family: "Old Standard TT";
+          color: #222222;
+          font-size: 20px;
+          line-height: 24px; }
+        #blog__contact__data__info > p {
+          font-family: "Roboto";
+          font-size: 14px;
+          line-height: 16.41px;
+          width: 57%; }
+        #blog__contact__data__info > .bg {
+          font-family: "Roboto";
+          font-size: 100px;
+          font-weight: 700;
+          line-height: 234.38px;
+          letter-spacing: -6px; }
+          #blog__contact__data__info > .bg.--right-top {
+            top: -3.6rem;
+            right: 3.6rem; }
+  #blog__form {
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; }
+    #blog__form > div {
+      width: 100%; }
+    #blog__form > button {
+      margin-block: 1rem; }
 
 html, * {
   box-sizing: border-box;

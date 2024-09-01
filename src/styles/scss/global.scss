@@ -137,6 +137,11 @@ main{
     display: none;
 }
 
+.--row-reverse{
+    display: flex;
+    flex-direction: row-reverse;        
+}
+
 .--line-through{
     text-decoration: line-through;
 }

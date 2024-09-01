@@ -12,19 +12,6 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
         width: 100%;
     }
 
-    &__availability{
-        width: 100%;
-        font-weight: 700;
-
-        &>h4{
-            font-family: $roboto-font;
-            font-size: 18px;
-            line-height: 19.58px;
-            letter-spacing: -0.5400000214576721px;
-            text-align: center;
-        }
-    }
-
     &__section{
         width: 100%;
         display: flex;
@@ -106,6 +93,25 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
         font-size: 16px;
         font-weight: 400;
         line-height: 24px;
+    }
+
+    &__availability{
+        width: 100%;
+        font-weight: 700;
+
+        &>h4{
+            font-family: $roboto-font;
+            font-size: 18px;
+            line-height: 19.58px;
+            letter-spacing: -0.5400000214576721px;
+            text-align: center;
+        }
+
+        &>form{
+            &>div{
+                @extend .--row-reverse;
+            }
+        }
     }
 
     &__founder{

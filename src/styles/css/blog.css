@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$fonts".
-        on line 22 of scss/blog.scss
+        on line 27 of scss/blog.scss
 
-17:                 display: flex;
-18:                 flex-direction: column;
-19:                 gap: 2rem;
-20: 
-21:                 &>strong{
-22:                     font-family: map-get($map: $fonts, $key: old-standard);
-23:                     color: map-get($map: $theme-colors, $key: quaternary);
-24:                     font-size: 20px;
-25:                     line-height: 24px;
-26:                 }
-27: 
+22:                 display: flex;
+23:                 flex-direction: column;
+24:                 gap: 2rem;
+25: 
+26:                 &>strong{
+27:                     font-family: map-get($map: $fonts, $key: old-standard);
+28:                     color: map-get($map: $theme-colors, $key: quaternary);
+29:                     font-size: 20px;
+30:                     line-height: 24px;
+31:                 }
+32: 
 
 Backtrace:
-scss/blog.scss:22
+scss/blog.scss:27
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -125,4 +125,4 @@ scss/blog.scss:22
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 22 of scss/blog.scss\A \A 17:                 display: flex;\A 18:                 flex-direction: column;\A 19:                 gap: 2rem;\A 20: \A 21:                 &>strong{\A 22:                     font-family: map-get($map: $fonts, $key: old-standard);\A 23:                     color: map-get($map: $theme-colors, $key: quaternary);\A 24:                     font-size: 20px;\A 25:                     line-height: 24px;\A 26:                 }\A 27: "; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 27 of scss/blog.scss\A \A 22:                 display: flex;\A 23:                 flex-direction: column;\A 24:                 gap: 2rem;\A 25: \A 26:                 &>strong{\A 27:                     font-family: map-get($map: $fonts, $key: old-standard);\A 28:                     color: map-get($map: $theme-colors, $key: quaternary);\A 29:                     font-size: 20px;\A 30:                     line-height: 24px;\A 31:                 }\A 32: "; }
