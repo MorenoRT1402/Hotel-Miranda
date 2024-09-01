@@ -3,11 +3,9 @@ main {
   display: flex;
   flex-direction: column; }
   main > div.--desktop {
-    padding: 1rem 17.2% 3rem;
+    padding: 1rem 17.2% 4.1rem;
     color: white;
     background-color: #222222; }
-    main > div.--desktop > strong {
-      margin: 0 auto; }
 
 .title {
   height: 100%;
@@ -114,6 +112,17 @@ main {
 @media (max-width: 1000px) {
   .--desktop {
     display: none; } }
+@media (min-width: 1000px) {
+  .--mobile {
+    display: none; }
+
+  .title {
+    height: 5rem; }
+    .title__logo {
+      font-size: 40px; }
+    .title__text {
+      font-size: 26px;
+      font-weight: 700; } }
 .section-intro, .home__tour {
   position: relative;
   padding: 6rem 1.2rem;
@@ -366,7 +375,6 @@ main {
   background-color: white; }
   .header__nav {
     display: flex;
-    justify-content: space-between;
     padding: 1rem;
     box-shadow: 1px 1px 10px gray; }
     .header__nav.--column {
@@ -384,9 +392,25 @@ main {
   .header__section {
     display: flex;
     align-items: center;
-    gap: 1rem; }
+    gap: 1rem;
+    width: 15%;
+    min-width: 4rem; }
     .header__section:first-child {
-      width: 50%; }
+      flex: 1; }
+
+#header__menu {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem; }
+  #header__menu > * {
+    font-family: "Archivo";
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-block: .7rem;
+    text-decoration: none;
+    color: inherit; }
+  #header__menu.--invisible {
+    display: none; }
 
 @media (min-width: 1000px) {
   .header {
@@ -394,7 +418,19 @@ main {
     top: 3rem;
     right: 0;
     left: 0;
-    margin: 0 auto; } }
+    margin: 0 auto; }
+
+  #header__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    position: absolute;
+    top: 19%;
+    left: 27.2%; }
+    #header__menu > a {
+      font-size: 16px; }
+    #header__menu.--invisible {
+      display: flex; } }
 .footer__main {
   background-image: url("./../../../public/images/bg-rectangle.svg");
   padding: 1.1rem;

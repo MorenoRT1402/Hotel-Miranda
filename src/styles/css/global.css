@@ -3,11 +3,9 @@ main {
   display: flex;
   flex-direction: column; }
   main > div.--desktop {
-    padding: 1rem 17.2% 3rem;
+    padding: 1rem 17.2% 4.1rem;
     color: white;
     background-color: #222222; }
-    main > div.--desktop > strong {
-      margin: 0 auto; }
 
 .title {
   height: 100%;
@@ -114,5 +112,16 @@ main {
 @media (max-width: 1000px) {
   .--desktop {
     display: none; } }
+@media (min-width: 1000px) {
+  .--mobile {
+    display: none; }
+
+  .title {
+    height: 5rem; }
+    .title__logo {
+      font-size: 40px; }
+    .title__text {
+      font-size: 26px;
+      font-weight: 700; } }
 
 /*# sourceMappingURL=global.css.map */

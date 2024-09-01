@@ -9,7 +9,6 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
         &__nav {
             display: flex;
-            justify-content: space-between;
             padding: 1rem;
             box-shadow: 1px 1px 10px gray;
 
@@ -36,12 +35,36 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
             display: flex;
             align-items: center;
             gap: 1rem;
+            width: 15%;
+            min-width: 4rem;
 
             &:first-child{
-                width: 50%;
+                flex: 1;
             }
         }
     }
+
+#header{
+    &__menu{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+
+        &>*{
+            font-family: $font-archivo;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-block: .7rem;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        &.--invisible{
+            display: none;
+        }
+    }
+
+}
 
 @media (min-width: $desktop-size){
     .header{
@@ -50,5 +73,25 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
         right: 0;
         left: 0;
         margin: 0 auto;
+    }
+
+    #header{
+        &__menu{
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+
+            position: absolute;
+            top: 19%;
+            left: 27.2%;
+
+            &>a{
+                font-size: 16px;
+            }
+
+            &.--invisible{
+                display: flex;
+            }
+        }
     }
 }
