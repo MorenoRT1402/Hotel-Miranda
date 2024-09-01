@@ -17,7 +17,19 @@ $fonts: (
 $desktop-size: 1000px;
 
 main{
-    padding-block: 3rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    &>div.--desktop{
+        padding: 1rem 17.2% 3rem;
+        color: white;
+        background-color: map-get($map: $theme-colors, $key: quaternary);
+
+        &>strong{
+            margin: 0 auto;
+        }
+    }
 }
 
 .title{
@@ -153,3 +165,10 @@ main{
         color: white;
     }
 }
+
+@media (max-width: $desktop-size){
+    .--desktop{
+        display: none;
+    }
+}
+

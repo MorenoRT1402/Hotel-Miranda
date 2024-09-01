@@ -1,5 +1,13 @@
 main {
-  padding-block: 3rem; }
+  position: relative;
+  display: flex;
+  flex-direction: column; }
+  main > div.--desktop {
+    padding: 1rem 17.2% 3rem;
+    color: white;
+    background-color: #222222; }
+    main > div.--desktop > strong {
+      margin: 0 auto; }
 
 .title {
   height: 100%;
@@ -102,5 +110,9 @@ main {
   background-color: #222222; }
   .--dark > * {
     color: white; }
+
+@media (max-width: 1000px) {
+  .--desktop {
+    display: none; } }
 
 /*# sourceMappingURL=global.css.map */
