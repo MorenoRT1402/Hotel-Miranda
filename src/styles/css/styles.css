@@ -266,6 +266,10 @@ main {
     font-size: 16px;
     font-weight: 700;
     line-height: 18.75px; }
+  .availability-form > div > input {
+    color: white; }
+    .availability-form > div > input::placeholder {
+      color: gray; }
   .availability-form > button {
     width: 75%; }
   .availability-form.--variant {
