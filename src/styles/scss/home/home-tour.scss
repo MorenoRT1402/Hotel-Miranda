@@ -4,6 +4,10 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
     @extend .section-intro;
     gap: 2rem;
 
+    &>*{
+        @extend .padding-in-desktop;
+    }
+
     &>p {
         max-width: 67%;
         font-family: $font-archivo;
@@ -26,5 +30,19 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
         display: flex;
         flex-direction: column;
         gap: 1rem;
+    }
+}
+
+@media(min-width: $desktop-size){
+    .home__tour{
+        padding-top: 8rem;
+
+        &>*{
+            max-width: 58%;
+        }
+
+        &__btns{
+            flex-direction: row;
+        }
     }
 }

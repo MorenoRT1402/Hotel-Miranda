@@ -3,7 +3,7 @@ main {
   display: flex;
   flex-direction: column; }
   main > div.--desktop {
-    padding: 1rem 17.2% 4.1rem;
+    padding: 1rem 0 4.1rem;
     color: white;
     background-color: #222222; }
 
@@ -122,6 +122,17 @@ main {
       font-size: 40px; }
     .title__text {
       font-size: 26px;
-      font-weight: 700; } }
+      font-weight: 700; }
+
+  .centered-in-desktop {
+    display: block;
+    width: 66%;
+    margin: 0 auto; }
+
+  .padding-in-desktop {
+    padding-inline: 16%; }
+
+  .row-in-desktop {
+    flex-direction: row; } }
 
 /*# sourceMappingURL=global.css.map */
