@@ -224,44 +224,50 @@ $gap-value: 1rem;
 
     gap: 2.75rem;
 
-    &>*{
+    &>div{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
         color: white;
         font-family: $font-roboto;
-    }
 
-    &>label{
-        margin-bottom: -1.5rem;
-        font-size: 16px;
-        font-weight: 700;
-        line-height: 18.75px;
-    }
-
-    &>div{
-        @extend .input;
-
-        &>input{
-            color: white;
-            
-            &::placeholder{
-                color: gray;
+        &>label{
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 18.75px;
+        }
+    
+        &>div{
+            @extend .input;
+    
+            &>input{
+                color: white;
+                
+                &::placeholder{
+                    color: gray;
+                }
             }
         }
     }
 
+
     &>button{
         width: 75%;
+        max-width: 15rem;
     }
 
     &.--variant{
         background-color: white;
-        
-        &>label{
-            color: black;
-            margin-bottom: -2rem;
-        }
+
         &>div{
-            @extend .input.--variant;
+            &>label{
+                color: black;
+            }
+            &>div{
+                @extend .input.--variant;
+            }
         }
+        
         &>button{
             width: 100%;
         }
@@ -307,6 +313,21 @@ $gap-value: 1rem;
                 font-weight: 500;
                 line-height: 17.58px;
             }
+        }
+    }
+}
+
+@media (min-width: $desktop-size){
+    .availability-form{
+        flex-direction: row;
+        padding-inline: 16%;
+
+        &>div{
+            width: 26%;
+        }
+
+        &>button{
+            margin-inline: auto 7%;
         }
     }
 }

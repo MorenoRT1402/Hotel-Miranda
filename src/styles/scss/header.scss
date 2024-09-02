@@ -62,8 +62,8 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
         &.--invisible{
             display: none;
         }
-    }
 
+    }
 }
 
 @media (min-width: $desktop-size){
@@ -91,6 +91,13 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
             &.--invisible{
                 display: flex;
+            }
+        }
+
+        &__icons{
+            &>img{
+                border: 1px solid;
+                padding: .5rem;
             }
         }
     }

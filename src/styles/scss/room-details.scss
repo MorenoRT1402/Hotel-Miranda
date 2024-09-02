@@ -109,7 +109,9 @@ $roboto-font: map-get($map: $fonts, $key: roboto);
 
         &>form{
             &>div{
-                @extend .--row-reverse;
+                &>div{
+                    @extend .--row-reverse;
+                }
             }
         }
     }
