@@ -48,6 +48,7 @@ $weight-normal: 400;
 
             &>img{
                 width: 100%;
+                max-width: 19.4375rem;
                 height: auto;
             }
 
@@ -70,6 +71,46 @@ $weight-normal: 400;
                     line-height: 22px;
                     text-align: center;
                 }
+            }
+        }
+    }
+}
+
+@media (min-width: $desktop-size){
+    .home__about{
+        display: flex;
+        flex-direction: row-reverse;
+
+        &>*{
+            flex: 1;
+            padding-left: 12rem;
+            max-width: 63rem;
+        }
+
+        &__info{
+            margin-top: 0;
+            max-width: 47.508rem;
+            z-index: 1;
+            @extend .--desktop__left-margin;
+            margin-right: -10rem;
+
+            &>article{
+                gap: 3rem;
+
+                &>img{
+                    max-width: 15.4375rem;
+                    aspect-ratio: 1;
+                }
+
+                &>section{
+                    padding-inline: 1.4rem;
+                }
+            }
+        }
+
+        &__intro{
+            &>*{
+                max-width: 25rem;
             }
         }
     }

@@ -3,7 +3,7 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 .header{
         position: fixed;
         max-height: 6.5rem;
-        width: 100vw;
+        width: 100%;
         z-index: 10;
         background-color: map-get($map: $theme-colors, $key: quaternary);
         color: white;
@@ -73,12 +73,8 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
 
 @media (min-width: $desktop-size){
-    .container-centered {
-        max-width: 97.875rem;
-        margin: 0 auto;
-        width: 100%;
-    }
     .header{
+        position: absolute;
         &__header{
             background-color: map-get($map: $theme-colors, $key: quaternary);
             color: white;

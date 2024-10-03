@@ -169,8 +169,35 @@ main{
 }
 
 @media (min-width: $desktop-size){
+    $left-padding: 10.335rem;
+    $second-padding: 3rem;
+    $inner-padding: $left-padding + $second-padding;
+    .container-centered {
+        max-width: calc(100% - 2 * #{$left-padding});
+        margin: 0 auto;
+        width: 100%;
+    }
+
     .--mobile{
         display: none;
+    }
+
+    .--desktop{
+        &__row{
+            flex-direction: row !important;
+            &-reverse{
+                flex-direction: row-reverse !important;
+            }
+        }
+        &__left-margin{
+            margin-left: $inner-padding;
+        }
+
+        &__move{
+            &-up{
+                margin-top: -2.5rem;
+            }
+        }
     }
 
     .title{
@@ -200,6 +227,10 @@ main{
 
     .row-in-desktop{
         flex-direction: row;
+    }
+
+    main{
+        gap: 10rem;
     }
 }
 

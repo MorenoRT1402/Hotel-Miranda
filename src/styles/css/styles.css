@@ -113,8 +113,22 @@ main {
   .--desktop {
     display: none; } }
 @media (min-width: 1000px) {
+  .container-centered, .header__header > strong, .header__nav {
+    max-width: calc(100% - 2 * 10.335rem);
+    margin: 0 auto;
+    width: 100%; }
+
   .--mobile {
     display: none; }
+
+  .--desktop__row {
+    flex-direction: row !important; }
+    .--desktop__row-reverse {
+      flex-direction: row-reverse !important; }
+  .--desktop__left-margin, .home__about__info {
+    margin-left: 13.335rem; }
+  .--desktop__move-up {
+    margin-top: -2.5rem; }
 
   .title {
     height: 5rem; }
@@ -133,7 +147,10 @@ main {
     padding-inline: 16%; }
 
   .row-in-desktop {
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  main {
+    gap: 10rem; } }
 .section-intro, .home__tour {
   position: relative;
   padding: 6rem 1.2rem;
@@ -395,7 +412,7 @@ main {
 .header {
   position: fixed;
   max-height: 6.5rem;
-  width: 100vw;
+  width: 100%;
   z-index: 10;
   background-color: #222222;
   color: white; }
@@ -443,17 +460,14 @@ main {
     display: none; }
 
 @media (min-width: 1000px) {
-  .container-centered, .header__header > strong, .header__nav {
-    max-width: 97.875rem;
-    margin: 0 auto;
-    width: 100%; }
-
-  .header__header {
-    background-color: #222222;
-    color: white; }
-    .header__header > strong {
-      display: block;
-      margin-block: 1rem; }
+  .header {
+    position: absolute; }
+    .header__header {
+      background-color: #222222;
+      color: white; }
+      .header__header > strong {
+        display: block;
+        margin-block: 1rem; }
 
   #header__menu {
     display: flex;
@@ -646,6 +660,7 @@ main {
     align-items: center; }
     .home__about__info > article > img {
       width: 100%;
+      max-width: 19.4375rem;
       height: auto; }
     .home__about__info > article > section {
       padding-block: 2rem;
@@ -660,6 +675,28 @@ main {
         line-height: 22px;
         text-align: center; }
 
+@media (min-width: 1000px) {
+  .home__about {
+    display: flex;
+    flex-direction: row-reverse; }
+    .home__about > * {
+      flex: 1;
+      padding-left: 12rem;
+      max-width: 63rem; }
+    .home__about__info {
+      margin-top: 0;
+      max-width: 47.508rem;
+      z-index: 1;
+      margin-right: -10rem; }
+      .home__about__info > article {
+        gap: 3rem; }
+        .home__about__info > article > img {
+          max-width: 15.4375rem;
+          aspect-ratio: 1; }
+        .home__about__info > article > section {
+          padding-inline: 1.4rem; }
+    .home__about__intro > * {
+      max-width: 25rem; } }
 .home__rooms {
   text-align: center; }
   .home__rooms > p {

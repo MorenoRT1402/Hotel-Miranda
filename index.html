@@ -43,31 +43,33 @@
         </nav>
     </header>
     <main>
-        <section class="home__tour">
-            <p>THE ULTIMATE LUXURY EXPERIENCE</p>
-            <h1>The Perfect Base For You</h1>
-            <section class="home__tour__btns">
-                <button class="standard-button">TAKE A TOUR</button>
-                <button class="standard-button --transparent">LEARN MORE</button>    
+        <section class="home__top">
+            <section class="home__tour">
+                <p>THE ULTIMATE LUXURY EXPERIENCE</p>
+                <h1>The Perfect Base For You</h1>
+                <section class="home__tour__btns">
+                    <button class="standard-button">TAKE A TOUR</button>
+                    <button class="standard-button --transparent">LEARN MORE</button>    
+                </section>
             </section>
+            <form action="" class="availability-form">
+                <div>
+                    <label for="arrival-date">Arrival Date</label>
+                    <div>
+                        <img src="./public/images/calendar.svg" alt="">
+                        <input type="text" placeholder="24th march 2020">
+                    </div>
+                </div>
+                <div>
+                    <label for="departure-date">LeDeparture Date</label>
+                    <div>
+                        <img src="./public/images/calendar.svg" alt="">
+                        <input type="text" placeholder="30th march 2020">
+                    </div>
+                </div>
+                <button class="standard-button">CHECK AVAILABILITY</button>
+            </form>
         </section>
-        <form action="" class="availability-form">
-            <div>
-                <label for="arrival-date">Arrival Date</label>
-                <div>
-                    <img src="./public/images/calendar.svg" alt="">
-                    <input type="text" placeholder="24th march 2020">
-                </div>
-            </div>
-            <div>
-                <label for="departure-date">LeDeparture Date</label>
-                <div>
-                    <img src="./public/images/calendar.svg" alt="">
-                    <input type="text" placeholder="30th march 2020">
-                </div>
-            </div>
-            <button class="standard-button">CHECK AVAILABILITY</button>
-        </form>
         <section class="home__about">
             <section class="home__about__intro">
                 <p class="home__about__intro__header">ABOUT US</p>
@@ -80,9 +82,9 @@
                     <button class="standard-button">BOOK NOW</button>    
             </section>
             <section class="home__about__info">
-                <article>
+                <article class="--desktop__row-reverse">
                     <img src="https://picsum.photos/300/200" alt="">
-                    <section>
+                    <section class="--desktop__move-up">
                         <img class="bg --right-top" src="./public/images/Group.svg" alt="bg-group-" class="--bg">
                         <img src="./public/images/Group.svg" alt="group-">
                         <h4>Strong Team</h4>
@@ -91,8 +93,8 @@
                             do eiusmod tempor.</p>
                     </section>
                 </article>
-                <article>
-                    <img src="https://picsum.photos/301/201" alt="">
+                <article class="--desktop__row">
+                    <img src="https://picsum.photos/301/201" class="--desktop__move-up" alt="">
                     <section class="--dark">
                         <img src="./public/images/svg-gobbler - 2022-03-01T201407.985 1.svg" alt="gobbler-">
                         <h4>Luxury Room</h4>

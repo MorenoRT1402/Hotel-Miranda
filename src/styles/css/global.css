@@ -113,8 +113,22 @@ main {
   .--desktop {
     display: none; } }
 @media (min-width: 1000px) {
+  .container-centered {
+    max-width: calc(100% - 2 * 10.335rem);
+    margin: 0 auto;
+    width: 100%; }
+
   .--mobile {
     display: none; }
+
+  .--desktop__row {
+    flex-direction: row !important; }
+    .--desktop__row-reverse {
+      flex-direction: row-reverse !important; }
+  .--desktop__left-margin {
+    margin-left: 13.335rem; }
+  .--desktop__move-up {
+    margin-top: -2.5rem; }
 
   .title {
     height: 5rem; }
@@ -133,6 +147,9 @@ main {
     padding-inline: 16%; }
 
   .row-in-desktop {
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  main {
+    gap: 10rem; } }
 
 /*# sourceMappingURL=global.css.map */

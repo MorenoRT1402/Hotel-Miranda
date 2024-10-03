@@ -7,7 +7,7 @@ Error: Undefined variable: "$fonts".
 3: .header{
 4:         position: fixed;
 5:         max-height: 6.5rem;
-6:         width: 100vw;
+6:         width: 100%;
 
 Backtrace:
 scss/header.scss:1
@@ -65,4 +65,4 @@ scss/header.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/header.scss\A \A 1: $font-archivo: map-get($map: $fonts, $key: archivo);\A 2: \A 3: .header{\A 4:         position: fixed;\A 5:         max-height: 6.5rem;\A 6:         width: 100vw;"; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/header.scss\A \A 1: $font-archivo: map-get($map: $fonts, $key: archivo);\A 2: \A 3: .header{\A 4:         position: fixed;\A 5:         max-height: 6.5rem;\A 6:         width: 100%;"; }
