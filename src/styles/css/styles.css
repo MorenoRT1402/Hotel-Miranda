@@ -394,14 +394,17 @@ main {
 
 .header {
   position: fixed;
+  max-height: 6.5rem;
   width: 100vw;
-  max-width: 1000px;
   z-index: 10;
-  background-color: white; }
+  background-color: #222222;
+  color: white; }
   .header__nav {
     display: flex;
     padding: 1rem;
-    box-shadow: 1px 1px 10px gray; }
+    box-shadow: 1px 1px 10px gray;
+    background-color: white;
+    color: black; }
     .header__nav.--column {
       box-shadow: none;
       flex-direction: column; }
@@ -426,7 +429,9 @@ main {
 #header__menu {
   display: flex;
   flex-direction: column;
-  padding: 1rem; }
+  padding: 1rem;
+  background-color: white;
+  color: black; }
   #header__menu > * {
     font-family: "Archivo";
     font-size: 1.1em;
@@ -438,12 +443,17 @@ main {
     display: none; }
 
 @media (min-width: 1000px) {
-  .header {
-    position: absolute;
-    top: 3rem;
-    right: 0;
-    left: 0;
-    margin: 0 auto; }
+  .container-centered, .header__header > strong, .header__nav {
+    max-width: 97.875rem;
+    margin: 0 auto;
+    width: 100%; }
+
+  .header__header {
+    background-color: #222222;
+    color: white; }
+    .header__header > strong {
+      display: block;
+      margin-block: 1rem; }
 
   #header__menu {
     display: flex;
@@ -451,7 +461,9 @@ main {
     gap: 2rem;
     position: absolute;
     top: 19%;
-    left: 27.2%; }
+    left: 27.2%;
+    margin-top: 3.2rem;
+    margin-left: 3rem; }
     #header__menu > a {
       font-size: 16px; }
     #header__menu.--invisible {
@@ -598,7 +610,7 @@ main {
 
 @media (min-width: 1000px) {
   .home__tour {
-    padding-top: 8rem; }
+    padding-top: 15rem; }
     .home__tour > * {
       max-width: 58%; }
     .home__tour__btns {

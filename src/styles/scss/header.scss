@@ -2,15 +2,18 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
 .header{
         position: fixed;
+        max-height: 6.5rem;
         width: 100vw;
-        max-width: $desktop-size;
         z-index: 10;
-        background-color: map-get($map: $theme-colors, $key: main);
+        background-color: map-get($map: $theme-colors, $key: quaternary);
+        color: white;
 
         &__nav {
             display: flex;
             padding: 1rem;
             box-shadow: 1px 1px 10px gray;
+            background-color: white;
+            color: black;
 
             &.--column{
                 box-shadow: none;
@@ -49,6 +52,8 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
         display: flex;
         flex-direction: column;
         padding: 1rem;
+        background-color: white;
+        color: black;
 
         &>*{
             font-family: $font-archivo;
@@ -66,13 +71,27 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
     }
 }
 
+
 @media (min-width: $desktop-size){
-    .header{
-        position: absolute;
-        top: 3rem;
-        right: 0;
-        left: 0;
+    .container-centered {
+        max-width: 97.875rem;
         margin: 0 auto;
+        width: 100%;
+    }
+    .header{
+        &__header{
+            background-color: map-get($map: $theme-colors, $key: quaternary);
+            color: white;
+
+            &>strong{
+                display: block;
+                @extend .container-centered;
+                margin-block: 1rem;
+            }
+        }
+        &__nav{
+            @extend .container-centered
+        }
     }
 
     #header{
@@ -84,6 +103,8 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
             position: absolute;
             top: 19%;
             left: 27.2%;
+            margin-top: 3.2rem;
+            margin-left: 3rem;
 
             &>a{
                 font-size: 16px;

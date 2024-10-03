@@ -35,7 +35,7 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
 @media(min-width: $desktop-size){
     .home__tour{
-        padding-top: 8rem;
+        padding-top: 15rem;
 
         &>*{
             max-width: 58%;
