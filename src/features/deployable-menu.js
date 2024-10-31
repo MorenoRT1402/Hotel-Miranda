@@ -11,14 +11,12 @@ const active = (Element, active) => {
 
 hamburgerMenu.addEventListener('click', () => {
     active(displayedMenu, false);
-    // displayedMenu.style.display = 'flex';
     active(hamburgerMenu, true);
     active(closeMenu, false);
 })
 
 closeMenu.addEventListener('click', () => {
     active(displayedMenu, true);
-    // displayedMenu.style.display = 'none';
     active(hamburgerMenu, false);
     active(closeMenu, true);
 })

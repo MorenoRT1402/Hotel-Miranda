@@ -81,7 +81,7 @@ main {
   color: #222222;
   font-weight: 400; }
 
-.roboto-text, .room__description > p, .footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, .about__counter__facts__fact > section > span {
+.roboto-text, .room__description__text > p, .footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, .about__counter__facts__fact > section > span {
   font-family: "Roboto";
   color: #222222;
   font-size: 14px;
@@ -218,11 +218,16 @@ main {
   align-items: center;
   background-color: white; }
   .room__img {
-    margin-top: -2.8rem;
-    width: 100%; }
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover; }
   .room__services {
+    margin-bottom: -3.8rem;
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    max-width: 20rem;
+    margin-inline: auto; }
   .room__description {
     margin-top: -2.6rem;
     z-index: 3;
@@ -231,15 +236,17 @@ main {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-block: 1.6rem; }
-    .room__description > h4 {
+    padding-block: 1.6rem;
+    margin-inline: auto;
+    max-width: 55rem; }
+    .room__description__text > h4 {
       font-family: "Old Standard TT";
       color: black;
       font-size: 28px;
       font-weight: 400;
       line-height: 36px;
       letter-spacing: -1.2000000476837158px; }
-    .room__description > p {
+    .room__description__text > p {
       line-height: 24px;
       text-align: center; }
     .room__description__price {
@@ -345,26 +352,50 @@ main {
     .availability-form > div {
       width: 26%; }
     .availability-form > button {
-      margin-inline: auto 7%; } }
+      margin-inline: auto 7%; }
+
+  .room__description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; }
+    .room__description__text {
+      text-align: left;
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+      .room__description__text > h {
+        font-size: 36px; }
+      .room__description__text > p {
+        text-align: left;
+        font-size: 14px; }
+    .room__description__price__number {
+      font-size: 40px; } }
 .swiper {
   width: 100%; }
+  .swiper-navigation {
+    max-height: 30rem;
+    overflow: hidden; }
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.swiper-button-custom, .swiper-button-next.--custom, .swiper-button-prev.--custom {
+  width: 2rem;
+  height: 2rem;
+  top: 50%; }
 
 .swiper-button-next.--custom {
   background-color: #BDAC8D;
-  color: white;
-  width: 1.5rem;
-  height: 1.5rem;
-  transform: translate(0, -5rem); }
+  color: white; }
   .swiper-button-next.--custom::after {
     content: ">";
     font-size: 9px; }
 
 .swiper-button-prev.--custom {
   background-color: white;
-  color: black;
-  width: 1.5rem;
-  height: 1.5rem;
-  transform: translate(0, -5rem); }
+  color: black; }
   .swiper-button-prev.--custom::after {
     content: "<";
     font-size: 9px; }
@@ -409,6 +440,15 @@ main {
     background-color: #BEAD8E;
     color: white; }
 
+@media (min-width: 1000px) {
+  .swiper-button-custom, .swiper-button-next.--custom, .swiper-button-prev.--custom {
+    transform: scale(1.75); }
+
+  .swiper-button-next.--custom {
+    right: 20rem; }
+
+  .swiper-button-prev.--custom {
+    left: 20rem; } }
 .header {
   position: fixed;
   max-height: 6.5rem;

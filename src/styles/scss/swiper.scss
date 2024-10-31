@@ -3,9 +3,6 @@ $tertiary-color: map-get($map: $theme-colors, $key: tertiary);
 @mixin swiperArrows($bgColor, $color, $content){
     background-color: $bgColor;
     color: $color;
-    width: 1.5rem;
-    height: 1.5rem;
-    transform: translate(0, -5rem);
     &::after{
         content: $content;
         font-size: 9px;
@@ -14,14 +11,33 @@ $tertiary-color: map-get($map: $theme-colors, $key: tertiary);
 
 .swiper{
     width: 100%;
+
+    &-navigation{
+        max-height: 30rem;
+        overflow: hidden;
+    }
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-custom {
+    width: 2rem;
+    height: 2rem;
+    top: 50%;
 }
 
 .swiper-button-next.--custom{
+    @extend .swiper-button-custom;
     $bgColor: map-get($map: $theme-colors, $key: senary);
     @include swiperArrows($bgColor: $bgColor,$color: white ,$content: '>' );
 }
 
 .swiper-button-prev.--custom{
+    @extend .swiper-button-custom;
     $bgColor: map-get($map: $theme-colors, $key: main);
     @include swiperArrows($bgColor: $bgColor,$color: black ,$content: '<' );
 }
@@ -81,3 +97,17 @@ $tertiary-color: map-get($map: $theme-colors, $key: tertiary);
         color: white;
     }
 }
+
+@media (min-width: $desktop-size) {
+    .swiper-button-custom{
+        transform: scale(1.75);
+    }
+    $arrow-separation : 20rem;
+    .swiper-button-next.--custom {
+        right: $arrow-separation;
+    }
+    .swiper-button-prev.--custom {
+        left: $arrow-separation;
+    }
+}
+  
