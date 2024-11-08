@@ -87,7 +87,7 @@ main {
   font-size: 14px;
   font-weight: 400; }
 
-.paragraph, .footer__main__contact > section > article > section > span, .home__about__intro__description, .home__intro-video > p, .about__intro__tour__info > p {
+.paragraph, .footer__main__contact > section > article > section > span, .home__about__intro__description, #home__intro-video__main > p, .about__intro__tour__info > p {
   font-family: "Roboto";
   color: #777777;
   font-size: 14px;
@@ -751,35 +751,60 @@ main {
     line-height: 60px;
     letter-spacing: -1.2000000476837158px; }
 
-.home__intro-video {
-  background-color: #222222;
+#home__intro-video {
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-inline: 1.2rem;
-  padding-block: 3.6rem;
-  gap: 2.4rem; }
-  .home__intro-video > strong {
-    font-family: "Archivo";
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 15.23px;
-    letter-spacing: 2.799999952316284px;
-    color: #BDAC8D; }
-  .home__intro-video__title {
-    font-family: "Old Standard TT";
-    font-size: 56px;
-    font-weight: 400;
-    line-height: 60px;
-    letter-spacing: -1.2000000476837158px;
-    color: white; }
-  .home__intro-video > p {
-    font-family: "Archivo";
-    color: #C2C2C2; }
-  .home__intro-video__player {
-    width: 100%;
-    border: 0; }
+  position: relative; }
+  #home__intro-video__main {
+    max-width: 84.0625rem;
+    background-color: #222222;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-inline: 1.2rem;
+    padding-block: 3.6rem;
+    gap: 2.4rem; }
+    #home__intro-video__main > strong {
+      font-family: "Archivo";
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 15.23px;
+      letter-spacing: 2.799999952316284px;
+      color: #BDAC8D; }
+    #home__intro-video__main__title {
+      font-family: "Old Standard TT";
+      font-size: 56px;
+      font-weight: 400;
+      line-height: 60px;
+      letter-spacing: -1.2000000476837158px;
+      color: white; }
+    #home__intro-video__main > p {
+      font-family: "Archivo";
+      color: #C2C2C2; }
+    #home__intro-video__main__player {
+      width: 100%;
+      max-width: 35.625rem;
+      border: 0; }
+  #home__intro-video__secondary {
+    background-color: #AD9D82; }
 
+@media (min-width: 1000px) {
+  #home__intro-video__main {
+    flex: 1;
+    padding-inline: 23.5rem 26rem;
+    padding-block: 8.125rem 12.0625rem;
+    text-align: justify; }
+    #home__intro-video__main__title {
+      text-align: left;
+      font-size: 80px;
+      line-height: 85px;
+      letter-spacing: -2.4px; }
+    #home__intro-video__main__player {
+      position: absolute;
+      left: 60.9375rem;
+      height: 28.75rem;
+      top: 7.5rem; }
+  #home__intro-video__secondary {
+    width: 35.9375rem; } }
 .home__food-menu {
   text-align: left;
   background-image: url(../../../public/images/icon\ 4.svg);

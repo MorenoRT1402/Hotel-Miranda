@@ -1,41 +1,78 @@
 $archivo-font: map-get($map: $fonts, $key: archivo);
 
-.home__intro-video{
-    $padding: 1.2rem;
-    background-color: map-get($map: $theme-colors, $key: quaternary);
+#home__intro-video{
     display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-inline: $padding;
-    padding-block: $padding * 3;
-    gap: $padding * 2;
+    position: relative;
+    &__main{
+        max-width: 84.0625rem;
+        $padding: 1.2rem;
+        background-color: map-get($map: $theme-colors, $key: quaternary);
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-inline: $padding;
+        padding-block: $padding * 3;
+        gap: $padding * 2;
 
-    &>strong{
-        font-family: $archivo-font;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 15.23px;
-        letter-spacing: 2.799999952316284px;
-        color: map-get($map: $theme-colors, $key: senary);
+        &>strong{
+            font-family: $archivo-font;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: 15.23px;
+            letter-spacing: 2.799999952316284px;
+            color: map-get($map: $theme-colors, $key: senary);
+        }
+
+        &__title{
+            font-family: map-get($map: $fonts, $key: old-standard);
+            font-size: 56px;
+            font-weight: 400;
+            line-height: 60px;
+            letter-spacing: -1.2000000476837158px;
+            color: white;
+        }
+
+        &>p{
+            font-family: $archivo-font;
+            @extend .paragraph;
+            color: map-get($map: $theme-colors, $key: septenary);
+        }
+
+        &__player{
+            width: 100%;
+            max-width: 35.625rem;
+            border: 0;
+        }
     }
-
-    &__title{
-        font-family: map-get($map: $fonts, $key: old-standard);
-        font-size: 56px;
-        font-weight: 400;
-        line-height: 60px;
-        letter-spacing: -1.2000000476837158px;
-        color: white;
+    &__secondary{
+        background-color: #AD9D82;
     }
+}
 
-    &>p{
-        font-family: $archivo-font;
-        @extend .paragraph;
-        color: map-get($map: $theme-colors, $key: septenary);
-    }
+@media (min-width: $desktop-size){
+    #home__intro-video{
+        &__main{
+            flex: 1;
+            padding-inline: 23.5rem 26rem;
+            padding-block: 8.125rem 12.0625rem;
+            text-align: justify;
 
-    &__player{
-        width: 100%;
-        border: 0;
+            &__title{
+                text-align: left;
+                font-size: 80px;
+                line-height: 85px;
+                letter-spacing: -2.4px;
+            }
+
+            &__player{
+                position: absolute;
+                left: 60.9375rem;
+                height: 28.75rem;
+                top: 7.5rem;
+            }
+        }
+        &__secondary{
+            width: 35.9375rem;
+        }
     }
 }
