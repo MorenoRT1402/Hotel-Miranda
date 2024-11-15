@@ -38,7 +38,7 @@ $tertiary-color: map-get($map: $theme-colors, $key: tertiary);
 
 .swiper-button-prev.--custom{
     @extend .swiper-button-custom;
-    $bgColor: map-get($map: $theme-colors, $key: main);
+    $bgColor: #F8F8F8;
     @include swiperArrows($bgColor: $bgColor,$color: black ,$content: '<' );
 }
 
