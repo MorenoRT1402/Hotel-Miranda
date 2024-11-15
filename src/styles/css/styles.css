@@ -641,6 +641,9 @@ main {
       z-index: 1;
       opacity: .72; }
 
+@media (min-width: 1000px) {
+  .facilities {
+    padding-inline: 23.125rem; } }
 .home__tour {
   gap: 2rem; }
   .home__tour > p {
@@ -790,7 +793,7 @@ main {
 @media (min-width: 1000px) {
   #home__intro-video__main {
     flex: 1;
-    padding-inline: 23.5rem 26rem;
+    padding-inline: 23.125rem 26rem;
     padding-block: 8.125rem 12.0625rem;
     text-align: justify; }
     #home__intro-video__main__title {

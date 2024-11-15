@@ -53,7 +53,7 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
     #home__intro-video{
         &__main{
             flex: 1;
-            padding-inline: 23.5rem 26rem;
+            padding-inline: $desktop-sections-padding 26rem;
             padding-block: 8.125rem 12.0625rem;
             text-align: justify;
 

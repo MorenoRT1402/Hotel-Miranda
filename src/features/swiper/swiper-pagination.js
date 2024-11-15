@@ -1,9 +1,29 @@
 const swiperPagination = new Swiper('.swiper-pag', {
     direction: 'horizontal',
-    loop: true,
-
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
-    }
+    },
+
+    breakpoints: {
+        768: {
+            slidesPerView: 3,
+            grid: {
+                rows: 2,
+                fill: 'row',
+            },
+            slidesPerGroup: 3,
+            loop: false,
+            spaceBetween: 20,
+        },
+
+        0: {
+            slidesPerView: 1,
+            grid: {
+                rows: 1,
+            },
+            slidesPerGroup: 1,
+            loop: true,
+        },
+    },
 });

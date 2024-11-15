@@ -78,3 +78,9 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
         }
     }
 }
+
+@media (min-width: $desktop-size){
+    .facilities{
+        padding-inline: $desktop-sections-padding;
+    }
+}
