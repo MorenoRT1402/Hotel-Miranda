@@ -1,21 +1,56 @@
-.footer{
+$gap : 2rem;
+
+#footer{
     &__main{
         background-image: url('./../../../public/images/bg-rectangle.svg');
+        margin-block: 4rem;
         padding: 1.1rem;
-        display: flex;
-        flex-direction: column;
+        @extend .flex-column;
         align-items: start;
-        gap: 2rem;
+        gap: $gap;
 
-        &>.title{
-            height: 5rem;
-        }
+        &__first{
+            @extend .flex-column;
+            gap: $gap;
 
-        &>p{
-            @extend .archivo-header;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 26px;
+            &>.title{
+                height: 5rem;
+            }
+        
+            &>p{
+                @extend .archivo-header;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 26px;
+            }
+        
+            &__socials{
+                display: flex;
+                gap: 1rem;
+        
+                &>div{
+                    display: flex;
+                    justify-content: center;
+                    padding: .5rem;
+                    background-color: white;
+        
+                    &:hover{
+                        background-color: map-get($map: $theme-colors, $key: tertiary);
+                    }
+        
+                    &>img{
+                        height: 100%;
+        
+                        &.--fill{
+                            background-color: rgb(119, 116, 116);
+                        }
+        
+                        &:hover{
+                            background-color: map-get($map: $theme-colors, $key: tertiary);
+                        }
+                    }
+                }
+            }
         }
 
         & h4{
@@ -30,36 +65,8 @@
             gap: 1rem;
         }
 
-        &__socials{
-            display: flex;
-            gap: 1rem;
-
-            &>div{
-                display: flex;
-                justify-content: center;
-                padding: .5rem;
-                background-color: white;
-
-                &:hover{
-                    background-color: map-get($map: $theme-colors, $key: tertiary);
-                }
-
-                &>img{
-                    height: 100%;
-
-                    &.--fill{
-                        background-color: rgb(119, 116, 116);
-                    }
-
-                    &:hover{
-                        background-color: map-get($map: $theme-colors, $key: tertiary);
-                    }
-                }
-            }
-        }
-
         &__services{
-            @extend .footer__main__header-base;
+            @extend #footer__main__header-base;
 
             &>section{
                 &>span{
@@ -72,7 +79,7 @@
         }
 
         &__contact{
-            @extend .footer__main__header-base;
+            @extend #footer__main__header-base;
 
             &>section{
                 display: flex;
@@ -111,5 +118,28 @@
         font-weight: 700;
         line-height: 18.75px;
         letter-spacing: -0.47999998927116394px;
+    }
+}
+
+@media (min-width: $desktop-size){
+    #footer{
+        &__main{
+            flex-direction: row;
+            margin: auto;
+            padding: 6rem 23rem;
+
+            &__first{
+                max-width: 16.875rem;
+            }
+
+            &__services{
+                max-width: 33rem;
+                padding-left: 2rem;
+
+                &>section>span{
+                    padding-right: 7rem;
+                }
+            }
+        }
     }
 }

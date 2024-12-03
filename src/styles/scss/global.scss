@@ -75,6 +75,19 @@ main{
     }
 }
 
+@mixin flex($direction: row){
+    display: flex;
+    flex-direction: $direction;
+}
+
+.flex-row{
+    @include flex(row);
+}
+
+.flex-column{
+    @include flex(column);
+}
+
 .section-base {
     margin-top: 2rem;
 }

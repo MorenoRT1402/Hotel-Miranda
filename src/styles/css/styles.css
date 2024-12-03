@@ -40,6 +40,14 @@ main {
   .title.--variant {
     gap: 1rem; }
 
+.flex-row {
+  display: flex;
+  flex-direction: row; }
+
+.flex-column, #footer__main, #footer__main__first {
+  display: flex;
+  flex-direction: column; }
+
 .section-base, .section-common, .facilities, .home__rooms, .home__food-menu {
   margin-top: 2rem; }
 
@@ -72,22 +80,22 @@ main {
     top: 2.3rem;
     right: 2.8rem; }
 
-.archivo-header, .section-header__strong, .section-header > strong, .footer__main > p, .facilities > strong, .home__about__intro > p, .home__rooms > p, .home__food-menu > section > strong, .about__intro__tour__info > strong, .about__intro__tour__info > p {
+.archivo-header, .section-header__strong, .section-header > strong, #footer__main__first > p, .facilities > strong, .home__about__intro > p, .home__rooms > p, .home__food-menu > section > strong, .about__intro__tour__info > strong, .about__intro__tour__info > p {
   font-family: "Archivo";
   color: #777777; }
 
-.old-standard-text, .section-header__title, .section-header > h3, .footer__main h4, .home__food-menu > section > h3, .home__food-menu__food__info > h4, .about__intro > p, .about__intro__tour__info > h3, .about__counter__facts__fact > section > h3, .room-details__section > h2 {
+.old-standard-text, .section-header__title, .section-header > h3, #footer__main h4, .home__food-menu > section > h3, .home__food-menu__food__info > h4, .about__intro > p, .about__intro__tour__info > h3, .about__counter__facts__fact > section > h3, .room-details__section > h2 {
   font-family: "Old Standard TT";
   color: #222222;
   font-weight: 400; }
 
-.roboto-text, .room__description__text > p, .footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, .about__counter__facts__fact > section > span {
+.roboto-text, .room__description__text > p, #footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, .about__counter__facts__fact > section > span {
   font-family: "Roboto";
   color: #222222;
   font-size: 14px;
   font-weight: 400; }
 
-.paragraph, .footer__main__contact > section > article > section > span, .home__about__intro__description, #home__intro-video__main > p, .about__intro__tour__info > p {
+.paragraph, #footer__main__contact > section > article > section > span, .home__about__intro__description, #home__intro-video__main > p, .about__intro__tour__info > p {
   font-family: "Roboto";
   color: #777777;
   font-size: 14px;
@@ -525,60 +533,61 @@ main {
   #header__icons > img {
     border: 1px solid;
     padding: .5rem; } }
-.footer__main {
+#footer__main {
   background-image: url("./../../../public/images/bg-rectangle.svg");
+  margin-block: 4rem;
   padding: 1.1rem;
-  display: flex;
-  flex-direction: column;
   align-items: start;
   gap: 2rem; }
-  .footer__main > .title {
-    height: 5rem; }
-  .footer__main > p {
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px; }
-  .footer__main h4 {
+  #footer__main__first {
+    gap: 2rem; }
+    #footer__main__first > .title {
+      height: 5rem; }
+    #footer__main__first > p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px; }
+    #footer__main__first__socials {
+      display: flex;
+      gap: 1rem; }
+      #footer__main__first__socials > div {
+        display: flex;
+        justify-content: center;
+        padding: .5rem;
+        background-color: white; }
+        #footer__main__first__socials > div:hover {
+          background-color: #BEAD8E; }
+        #footer__main__first__socials > div > img {
+          height: 100%; }
+          #footer__main__first__socials > div > img.--fill {
+            background-color: #777474; }
+          #footer__main__first__socials > div > img:hover {
+            background-color: #BEAD8E; }
+  #footer__main h4 {
     font-size: 24px;
     line-height: 24px; }
-  .footer__main__header-base, .footer__main__services, .footer__main__contact {
+  #footer__main__header-base, #footer__main__services, #footer__main__contact {
     display: flex;
     flex-direction: column;
     gap: 1rem; }
-  .footer__main__socials {
-    display: flex;
-    gap: 1rem; }
-    .footer__main__socials > div {
-      display: flex;
-      justify-content: center;
-      padding: .5rem;
-      background-color: white; }
-      .footer__main__socials > div:hover {
-        background-color: #BEAD8E; }
-      .footer__main__socials > div > img {
-        height: 100%; }
-        .footer__main__socials > div > img.--fill {
-          background-color: #777474; }
-        .footer__main__socials > div > img:hover {
-          background-color: #BEAD8E; }
-  .footer__main__services > section > span {
+  #footer__main__services > section > span {
     min-width: 45%;
     padding-right: 2.1rem;
     margin-block: 1rem;
     display: inline-block; }
-  .footer__main__contact > section {
+  #footer__main__contact > section {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     margin-block: 2rem; }
-    .footer__main__contact > section > article {
+    #footer__main__contact > section > article {
       display: flex;
       gap: 1.3rem; }
-      .footer__main__contact > section > article > section > h4 {
+      #footer__main__contact > section > article > section > h4 {
         font-size: 20px; }
-      .footer__main__contact > section > article > section > span {
+      #footer__main__contact > section > article > section > span {
         line-height: 16.41px; }
-.footer__policy {
+#footer__policy {
   width: 100%;
   background-color: #F8F8F8;
   display: flex;
@@ -590,6 +599,18 @@ main {
   line-height: 18.75px;
   letter-spacing: -0.47999998927116394px; }
 
+@media (min-width: 1000px) {
+  #footer__main {
+    flex-direction: row;
+    margin: auto;
+    padding: 6rem 23rem; }
+    #footer__main__first {
+      max-width: 16.875rem; }
+    #footer__main__services {
+      max-width: 33rem;
+      padding-left: 2rem; }
+      #footer__main__services > section > span {
+        padding-right: 7rem; } }
 .facilities {
   padding: 1rem; }
   .facilities > strong {
