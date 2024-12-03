@@ -610,7 +610,11 @@ main {
       max-width: 33rem;
       padding-left: 2rem; }
       #footer__main__services > section > span {
-        padding-right: 7rem; } }
+        padding-right: 7rem; }
+  #footer__policy {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 23rem; } }
 .facilities {
   padding: 1rem; }
   .facilities > strong {

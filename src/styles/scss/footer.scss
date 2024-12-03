@@ -141,5 +141,11 @@ $gap : 2rem;
                 }
             }
         }
+
+        &__policy{
+            flex-direction: row;
+            justify-content: space-between;
+            padding-inline: 23rem;
+        }
     }
 }
