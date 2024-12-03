@@ -899,7 +899,8 @@ main {
   background-color: #222222;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  align-items: center;
+  max-width: 73.125rem; }
   .home__metrics__card {
     display: flex;
     flex-direction: column;
@@ -925,6 +926,11 @@ main {
         line-height: 21.82px;
         color: #999999; }
 
+@media (min-width: 1000px) {
+  .home__metrics {
+    flex-direction: row;
+    gap: 5rem;
+    margin: auto; } }
 .about__intro {
   padding: 3rem 1.6rem 0;
   display: flex;
