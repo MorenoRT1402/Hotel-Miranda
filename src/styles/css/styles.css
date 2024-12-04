@@ -80,22 +80,22 @@ main {
     top: 2.3rem;
     right: 2.8rem; }
 
-.archivo-header, .section-header__strong, .section-header > strong, #footer__main__first > p, .facilities > strong, .home__about__intro > p, .home__rooms > p, .home__food-menu > section > strong, .about__intro__tour__info > strong, .about__intro__tour__info > p {
+.archivo-header, .section-header__strong, .section-header > strong, #footer__main__first > p, .facilities > strong, .home__about__intro > p, .home__rooms > p, .home__food-menu > section > strong, #about__intro__tour__info > strong, #about__intro__tour__info > p {
   font-family: "Archivo";
   color: #777777; }
 
-.old-standard-text, .section-header__title, .section-header > h3, #footer__main h4, .home__food-menu > section > h3, .home__food-menu__food__info > h4, .about__intro > p, .about__intro__tour__info > h3, .about__counter__facts__fact > section > h3, .room-details__section > h2 {
+.old-standard-text, .section-header__title, .section-header > h3, #footer__main h4, .home__food-menu > section > h3, .home__food-menu__food__info > h4, #about__intro > p, #about__intro__tour__info > h3, #about__counter__facts__fact > section > h3, .room-details__section > h2 {
   font-family: "Old Standard TT";
   color: #222222;
   font-weight: 400; }
 
-.roboto-text, .room__description__text > p, #footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, .about__counter__facts__fact > section > span {
+.roboto-text, .room__description__text > p, #footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, #about__counter__facts__fact > section > span {
   font-family: "Roboto";
   color: #222222;
   font-size: 14px;
   font-weight: 400; }
 
-.paragraph, #footer__main__contact > section > article > section > span, .home__about__intro__description, #home__intro-video__main > p, .about__intro__tour__info > p {
+.paragraph, #footer__main__contact > section > article > section > span, .home__about__intro__description, #home__intro-video__main > p, #about__intro__tour__info > p {
   font-family: "Roboto";
   color: #777777;
   font-size: 14px;
@@ -964,63 +964,68 @@ main {
     flex-direction: row;
     gap: 5rem;
     margin: auto; } }
-.about__intro {
+#about__intro {
   padding: 3rem 1.6rem 0;
   display: flex;
   flex-direction: column;
   gap: 2rem; }
-  .about__intro > iframe {
+  #about__intro > iframe {
     width: 100%;
-    height: calc(335 / 186 * 100%); }
-  .about__intro > p {
+    max-width: 73.125rem;
+    height: calc(335 / 186 * 100%);
+    margin: auto; }
+  #about__intro > p {
     font-size: 32px;
+    font-weight: 400;
     line-height: 39.55px;
     letter-spacing: -1.159999966621399px;
-    text-align: center; }
-  .about__intro__services {
+    text-align: center;
+    max-width: 66.5rem;
+    margin: auto; }
+  #about__intro__services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 1rem; }
-    .about__intro__services > div {
+    #about__intro__services > div {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 1.5rem .1rem;
       gap: 1rem; }
-      .about__intro__services > div:hover {
+      #about__intro__services > div:hover {
         background-color: #BEAD8E;
         color: white; }
-        .about__intro__services > div:hover > img {
+        #about__intro__services > div:hover > img {
           filter: grayscale(100%) brightness(200%); }
-      .about__intro__services > div > img {
+      #about__intro__services > div > img {
         width: 40%;
         filter: sepia(1) hue-rotate() saturate(700%) brightness(60%); }
-      .about__intro__services > div > strong {
+      #about__intro__services > div > strong {
         font-family: "Archivo";
         font-size: 12px;
         font-weight: 700;
         line-height: 14px;
         letter-spacing: 2.4000000953674316px;
         text-align: center; }
-  .about__intro__tour {
+  #about__intro__tour {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 1rem;
     gap: 1.5rem;
     box-shadow: 0px 14px 24px 0px #B8B8B81A; }
-    .about__intro__tour__info {
+    #about__intro__tour__info {
       display: flex;
       flex-direction: column;
       gap: 1.5rem; }
-      .about__intro__tour__info > strong {
+      #about__intro__tour__info > strong {
         font-size: 14px;
         font-weight: 700;
         line-height: 15.23px;
         letter-spacing: 2.799999952316284px; }
-      .about__intro__tour__info > h3 {
+      #about__intro__tour__info > h3 {
         font-size: 40px;
         font-weight: 400;
         line-height: 49.44px;
@@ -1032,33 +1037,41 @@ main {
     line-height: 72px;
     letter-spacing: -2.1600000858306885px;
     text-underline-position: from-font;
+    text-decoration-skip-ink: none; }
+  #about__intro > iframe {
+    height: 40.625rem; }
+  #about__intro > p {
+    font-size: 72px;
+    line-height: 88.99px;
+    letter-spacing: -2.1600000858306885px;
+    text-underline-position: from-font;
     text-decoration-skip-ink: none; } }
-.about__counter {
+#about__counter {
   display: flex;
   flex-direction: column;
   gap: 3rem;
   padding: 1rem; }
-  .about__counter__facts {
+  #about__counter__facts {
     display: flex;
     flex-direction: column;
     gap: 3.2rem; }
-    .about__counter__facts__fact {
+    #about__counter__facts__fact {
       display: flex;
       gap: 1rem; }
-      .about__counter__facts__fact > section {
+      #about__counter__facts__fact > section {
         width: 80%; }
-        .about__counter__facts__fact > section > h3 {
+        #about__counter__facts__fact > section > h3 {
           font-size: 60px;
           line-height: 60px;
           letter-spacing: -1.7999999523162842px; }
-        .about__counter__facts__fact > section > span {
+        #about__counter__facts__fact > section > span {
           color: gray;
           font-size: 16px;
           line-height: 16px; }
-  .about__counter > div img {
+  #about__counter > div img {
     width: 100%; }
 
-.about {
+#about {
   display: flex;
   flex-direction: column;
   gap: 2rem; }
