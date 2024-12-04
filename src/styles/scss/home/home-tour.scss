@@ -4,10 +4,6 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
     @extend .section-intro;
     gap: 2rem;
 
-    &>*{
-        @extend .padding-in-desktop;
-    }
-
     &>p {
         max-width: 67%;
         font-family: $font-archivo;
@@ -35,10 +31,13 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
 @media(min-width: $desktop-size){
     .home__tour{
-        padding-top: 15rem;
 
-        &>*{
-            max-width: 58%;
+        &>h1{
+            font-size: 120px;
+            line-height: 130px;
+            letter-spacing: -3.5999999046325684px;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
         }
 
         &__btns{

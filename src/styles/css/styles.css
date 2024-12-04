@@ -151,7 +151,7 @@ main {
     width: 66%;
     margin: 0 auto; }
 
-  .padding-in-desktop, .home__tour > * {
+  .padding-in-desktop {
     padding-inline: 16%; }
 
   .row-in-desktop {
@@ -354,6 +354,10 @@ main {
     line-height: 17.58px; }
 
 @media (min-width: 1000px) {
+  .section-intro, .home__tour {
+    padding-top: 15rem;
+    padding-inline: 18.54rem 50rem; }
+
   .availability-form {
     flex-direction: row;
     padding-inline: 16%; }
@@ -691,12 +695,14 @@ main {
     gap: 1rem; }
 
 @media (min-width: 1000px) {
-  .home__tour {
-    padding-top: 15rem; }
-    .home__tour > * {
-      max-width: 58%; }
-    .home__tour__btns {
-      flex-direction: row; } }
+  .home__tour > h1 {
+    font-size: 120px;
+    line-height: 130px;
+    letter-spacing: -3.5999999046325684px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; }
+  .home__tour__btns {
+    flex-direction: row; } }
 .home__about__intro {
   background-color: #F9F9F9;
   padding: 2.5rem 1.5rem 12rem;

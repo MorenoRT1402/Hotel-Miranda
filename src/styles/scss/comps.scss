@@ -328,6 +328,11 @@ $gap-value: 1rem;
 }
 
 @media (min-width: $desktop-size){
+    .section-intro{
+        padding-top: 15rem;
+        padding-inline: 18.54rem 50rem;
+    }
+
     .availability-form{
         flex-direction: row;
         padding-inline: 16%;
