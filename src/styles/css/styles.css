@@ -357,6 +357,8 @@ main {
   .section-intro, .home__tour {
     padding-top: 15rem;
     padding-inline: 18.54rem 50rem; }
+    .section-intro__location {
+      left: 90.75rem; }
 
   .availability-form {
     flex-direction: row;
@@ -1024,6 +1026,13 @@ main {
         line-height: 49.44px;
         letter-spacing: -1.0499999523162842px; }
 
+@media (min-width: 1000px) {
+  #about__section-intro > h2 {
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -2.1600000858306885px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none; } }
 .about__counter {
   display: flex;
   flex-direction: column;

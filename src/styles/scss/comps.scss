@@ -331,6 +331,10 @@ $gap-value: 1rem;
     .section-intro{
         padding-top: 15rem;
         padding-inline: 18.54rem 50rem;
+
+        &__location{
+            left: 90.75rem;
+        }
     }
 
     .availability-form{

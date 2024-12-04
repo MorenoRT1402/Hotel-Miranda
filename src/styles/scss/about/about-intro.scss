@@ -94,3 +94,17 @@
 
     }
 }
+
+@media(min-width: $desktop-size){
+    #about{
+        &__section-intro{
+            &>h2{
+                font-size: 72px;
+                line-height: 72px;
+                letter-spacing: -2.1600000858306885px;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+            }
+        }
+    }
+}
