@@ -1,10 +1,10 @@
 /*
 Error: Undefined variable: "$theme-colors".
-        on line 40 of scss/about/about-intro.scss
+        on line 47 of scss/about/about-intro.scss
         from line 1 of scss/about/about.scss
 
 Backtrace:
-scss/about/about-intro.scss:40
+scss/about/about-intro.scss:47
 scss/about/about.scss:1
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
@@ -117,4 +117,4 @@ scss/about/about.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 40 of scss/about/about-intro.scss\A         from line 1 of scss/about/about.scss"; }
+  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 47 of scss/about/about-intro.scss\A         from line 1 of scss/about/about.scss"; }

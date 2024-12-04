@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$theme-colors".
-        on line 40 of scss/about/about-intro.scss
+        on line 47 of scss/about/about-intro.scss
 
-35:             align-items: center;
-36:             padding: 1.5rem .1rem;
-37:             gap: 1rem;
-38: 
-39:             &:hover{
-40:                 background-color: map-get($map: $theme-colors, $key: tertiary);
-41:                 color: white;
-42: 
-43:                 &>img{
-44:                     filter: grayscale(100%) brightness(200%);
-45:                 }
+42:             align-items: center;
+43:             padding: 1.5rem .1rem;
+44:             gap: 1rem;
+45: 
+46:             &:hover{
+47:                 background-color: map-get($map: $theme-colors, $key: tertiary);
+48:                 color: white;
+49: 
+50:                 &>img{
+51:                     filter: grayscale(100%) brightness(200%);
+52:                 }
 
 Backtrace:
-scss/about/about-intro.scss:40
+scss/about/about-intro.scss:47
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -114,4 +114,4 @@ scss/about/about-intro.scss:40
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 40 of scss/about/about-intro.scss\A \A 35:             align-items: center;\A 36:             padding: 1.5rem .1rem;\A 37:             gap: 1rem;\A 38: \A 39:             &:hover{\A 40:                 background-color: map-get($map: $theme-colors, $key: tertiary);\A 41:                 color: white;\A 42: \A 43:                 &>img{\A 44:                     filter: grayscale(100%) brightness(200%);\A 45:                 }"; }
+  content: "Error: Undefined variable: \"$theme-colors\".\A         on line 47 of scss/about/about-intro.scss\A \A 42:             align-items: center;\A 43:             padding: 1.5rem .1rem;\A 44:             gap: 1rem;\A 45: \A 46:             &:hover{\A 47:                 background-color: map-get($map: $theme-colors, $key: tertiary);\A 48:                 color: white;\A 49: \A 50:                 &>img{\A 51:                     filter: grayscale(100%) brightness(200%);\A 52:                 }"; }

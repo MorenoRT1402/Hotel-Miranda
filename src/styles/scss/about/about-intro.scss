@@ -1,3 +1,8 @@
+.about__intro--centered{
+    max-width: 66.5rem;
+    margin: auto;
+}
+
 #about__intro{
     padding: 3rem 1.6rem 0;
     display: flex;
@@ -12,23 +17,25 @@
     }
 
     &>p{
+        @extend .about__intro--centered;
         @extend .old-standard-text;
         font-size: 32px;
         font-weight: 400;
         line-height: 39.55px;
         letter-spacing: -1.159999966621399px;
         text-align: center;
-        max-width: 66.5rem;
-        margin: auto;
     }
 
     &__services{
+        @extend .about__intro--centered;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         gap: 1rem;
+        width: 100%;
 
         &>div{
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -62,6 +69,7 @@
     }
 
     &__tour{
+        @extend .about__intro--centered;
         $gap: 1.5rem;
 
         display: flex;
@@ -71,10 +79,19 @@
         gap: $gap;
         box-shadow: 0px 14px 24px 0px #B8B8B81A;
 
+        &>img{
+            width: 100%;
+            max-width: 33.125rem;
+        }
+
         &__info{
             display: flex;
             flex-direction: column;
             gap: $gap;
+
+            &>*{
+                max-width: 60rem;
+            }
 
             &>strong{
                 @extend .archivo-header;
@@ -108,7 +125,7 @@
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
     }
-    
+
     #about{
         &__section-intro{
             &>h2{
@@ -123,6 +140,26 @@
 
             &>p{
                 @include text(88.99px);
+            }
+
+            &__services{
+                display: flex;
+                // grid-template-rows: 1fr;
+                // grid-template-columns: auto;
+            }
+
+            &__tour{
+                flex-direction: row;
+
+                &__info{
+                    &>h3{
+                        font-size: 48px;
+                        line-height: 59.33px;
+                        letter-spacing: -1.440000057220459px;
+                        text-underline-position: from-font;
+                        text-decoration-skip-ink: none;
+                    }
+                }
             }
         }
     }
