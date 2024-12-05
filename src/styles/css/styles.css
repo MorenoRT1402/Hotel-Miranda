@@ -622,19 +622,23 @@ main {
     justify-content: space-between;
     padding-inline: 23rem; } }
 .facilities {
-  padding: 1rem; }
+  padding: 3rem 1rem; }
   .facilities > strong {
     font-size: 14px;
     font-weight: 700;
     line-height: 15.23px;
-    letter-spacing: 2.799999952316284px; }
+    letter-spacing: 2.7999999523px;
+    color: white; }
   .facilities > h3 {
     font-family: "Old Standard TT";
     color: #222222;
     font-weight: 400;
     font-size: 56px;
+    font-weight: 400;
     line-height: 60px;
-    letter-spacing: -1.2000000476837158px; }
+    letter-spacing: -1.2000000477px;
+    color: white;
+    color: white; }
   .facilities__feature {
     padding-block: 5.5rem 3rem;
     padding-inline: 1rem;
@@ -662,7 +666,12 @@ main {
       line-height: 30px;
       letter-spacing: -0.8999999761581421px; }
     .facilities__feature > p {
-      font-family: "Archivo"; }
+      font-family: "Archivo";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 24px;
+      text-underline-position: from-font;
+      text-decoration-skip-ink: none; }
   .facilities.--dark .facilities__feature {
     background-color: #292929; }
     .facilities.--dark .facilities__feature > * {
@@ -674,7 +683,10 @@ main {
 
 @media (min-width: 1000px) {
   .facilities {
-    padding-inline: 23.125rem; } }
+    padding-block: 7rem;
+    padding-inline: 23.125rem; }
+    .facilities__feature {
+      padding-inline: 3.7rem; } }
 .home__tour {
   gap: 2rem; }
   .home__tour > p {

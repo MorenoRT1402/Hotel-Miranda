@@ -9,21 +9,25 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
 
 .facilities{
     @extend .section-common;
-    padding: 1rem;
+    padding: 3rem 1rem;
 
+    @mixin facilities-header-text($font-size: 14px, $font-weight: 700, $line-height: 15.23px, $letter-spacing: 2.799999952316284px){
+        font-size: $font-size;
+        font-weight: $font-weight;
+        line-height: $line-height;
+        letter-spacing: $letter-spacing;
+        color: white;
+    }
+    
     &>strong{
         @extend .archivo-header;
-        font-size: 14px;
-        font-weight: 700;
-        line-height: 15.23px;
-        letter-spacing: 2.799999952316284px;
+        @include facilities-header-text();
     }
 
     &>h3{
         @include facilities-standard();
-        font-size: 56px;
-        line-height: 60px;
-        letter-spacing: -1.2000000476837158px;
+        @include facilities-header-text(56px, 400, 60px, -1.2000000476837158px);
+        color: white;
     }
 
     &__feature{
@@ -59,6 +63,11 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
 
         &>p{
             font-family: $archivo-font;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
         }
     }
 
@@ -81,6 +90,11 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
 
 @media (min-width: $desktop-size){
     .facilities{
+        padding-block: 7rem;
         padding-inline: $desktop-sections-padding;
+
+        &__feature{
+            padding-inline: 3.7rem;
+        }
     }
 }
