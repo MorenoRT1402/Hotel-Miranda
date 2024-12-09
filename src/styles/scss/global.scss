@@ -246,5 +246,9 @@ main{
     main{
         gap: 10rem;
     }
+
+    .standard-section{
+        padding-inline: $desktop-sections-padding;
+    }
 }
 

@@ -158,6 +158,9 @@ main {
     flex-direction: row; }
 
   main {
-    gap: 10rem; } }
+    gap: 10rem; }
+
+  .standard-section {
+    padding-inline: 23.125rem; } }
 
 /*# sourceMappingURL=global.css.map */

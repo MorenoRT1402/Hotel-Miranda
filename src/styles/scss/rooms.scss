@@ -1,0 +1,7 @@
+@media(min-width: $desktop-size){
+    #rooms{
+        &__swiper{
+            padding-inline: $desktop-sections-padding;
+        }
+    }
+}

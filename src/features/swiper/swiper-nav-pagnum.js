@@ -14,4 +14,12 @@ const swiperPagNum = new Swiper('.swiper-nav-pagnum', {
             return '<span class="' + className + '">' + (index + 1) + '</span>';
         }
     },
+
+    breakpoints: {
+        1000: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            loop: false,
+        },
+    }
 });

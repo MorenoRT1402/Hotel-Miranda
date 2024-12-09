@@ -158,7 +158,10 @@ main {
     flex-direction: row; }
 
   main {
-    gap: 10rem; } }
+    gap: 10rem; }
+
+  .standard-section {
+    padding-inline: 23.125rem; } }
 .section-intro, .home__tour {
   position: relative;
   padding: 6rem 1.2rem;
@@ -356,13 +359,13 @@ main {
 @media (min-width: 1000px) {
   .section-intro, .home__tour {
     padding-top: 15rem;
-    padding-inline: 18.54rem 50rem; }
+    padding-inline: 23.125rem 50rem; }
     .section-intro__location {
       left: 90.75rem; }
 
   .availability-form {
-    flex-direction: row;
-    padding-inline: 16%; }
+    padding-inline: 23.125rem;
+    flex-direction: row; }
     .availability-form > div {
       width: 26%; }
     .availability-form > button {
@@ -1115,6 +1118,9 @@ main {
   flex-direction: column;
   gap: 2rem; }
 
+@media (min-width: 1000px) {
+  #rooms__swiper {
+    padding-inline: 23.125rem; } }
 .room-details {
   padding: 2rem 1rem;
   display: flex;
