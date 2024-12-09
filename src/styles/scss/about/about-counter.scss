@@ -39,3 +39,20 @@
         }
     }
 }
+
+@media(min-width: $desktop-size){
+    #about__counter{
+        padding-inline: $desktop-sections-padding;
+
+        &__facts{
+            flex-direction: row;
+            justify-content: space-between;
+
+            &__fact{
+                &>section{
+                    min-width: 10rem;
+                }
+            }
+        }
+    }
+}

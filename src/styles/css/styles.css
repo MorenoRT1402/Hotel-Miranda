@@ -1102,6 +1102,14 @@ main {
   #about__counter > div img {
     width: 100%; }
 
+@media (min-width: 1000px) {
+  #about__counter {
+    padding-inline: 23.125rem; }
+    #about__counter__facts {
+      flex-direction: row;
+      justify-content: space-between; }
+      #about__counter__facts__fact > section {
+        min-width: 10rem; } }
 #about {
   display: flex;
   flex-direction: column;

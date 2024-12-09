@@ -1,18 +1,46 @@
 /*
-Sass::SyntaxError: "#about__counter__facts__fact > section > h3" failed to @extend ".old-standard-text".
-The selector ".old-standard-text" was not found.
-Use "@extend .old-standard-text !optional" if the extend should be able to fail.
+Error: Undefined variable: "$desktop-size".
+        on line 43 of scss/about/about-counter.scss
 
+38:             width: 100%;
+39:         }
+40:     }
+41: }
+42: 
+43: @media(min-width: $desktop-size){
+44:     #about__counter{
+45:         padding-inline: $desktop-sections-padding;
+46: 
+47:         &__facts{
+48:             flex-direction: row;
 
 Backtrace:
-scss/about/about-counter.scss:20
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:56:in `block in check_extends_fired!'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `block in each_value'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/util/subset_map.rb:105:in `each_value'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/extend.rb:16:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:39:in `css_tree'
+scss/about/about-counter.scss:43
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:551:in `block in run_interp_no_strip'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:549:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:549:in `run_interp_no_strip'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:556:in `run_interp'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:521:in `visit_media'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
@@ -37,4 +65,4 @@ scss/about/about-counter.scss:20
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Sass::SyntaxError: \"#about__counter__facts__fact > section > h3\" failed to @extend \".old-standard-text\".\A The selector \".old-standard-text\" was not found.\A Use \"@extend .old-standard-text !optional\" if the extend should be able to fail.\A "; }
+  content: "Error: Undefined variable: \"$desktop-size\".\A         on line 43 of scss/about/about-counter.scss\A \A 38:             width: 100%;\A 39:         }\A 40:     }\A 41: }\A 42: \A 43: @media(min-width: $desktop-size){\A 44:     #about__counter{\A 45:         padding-inline: $desktop-sections-padding;\A 46: \A 47:         &__facts{\A 48:             flex-direction: row;"; }
