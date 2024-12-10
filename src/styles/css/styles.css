@@ -631,7 +631,8 @@ main {
     font-weight: 700;
     line-height: 15.23px;
     letter-spacing: 2.7999999523px;
-    color: white; }
+    color: white;
+    color: #777777; }
   .facilities > h3 {
     font-family: "Old Standard TT";
     color: #222222;
@@ -641,7 +642,7 @@ main {
     line-height: 60px;
     letter-spacing: -1.2000000477px;
     color: white;
-    color: white; }
+    color: black; }
   .facilities__feature {
     padding-block: 5.5rem 3rem;
     padding-inline: 1rem;
@@ -1120,7 +1121,9 @@ main {
 
 @media (min-width: 1000px) {
   #rooms__swiper {
-    padding-inline: 23.125rem; } }
+    padding-inline: 23.125rem; }
+  #rooms-block {
+    display: flex; } }
 .room-details {
   padding: 2rem 1rem;
   display: flex;

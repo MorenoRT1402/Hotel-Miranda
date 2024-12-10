@@ -3,5 +3,9 @@
         &__swiper{
             padding-inline: $desktop-sections-padding;
         }
+
+        &-block{
+            display: flex;
+        }
     }
 }
