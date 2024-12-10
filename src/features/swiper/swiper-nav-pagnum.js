@@ -17,9 +17,8 @@ const swiperPagNum = new Swiper('.swiper-nav-pagnum', {
 
     breakpoints: {
         1000: {
+            direction: 'vertical',
             slidesPerView: 4,
-            spaceBetween: 30,
-            loop: false,
         },
     }
 });

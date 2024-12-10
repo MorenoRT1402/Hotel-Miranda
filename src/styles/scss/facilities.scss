@@ -22,12 +22,13 @@ $archivo-font: map-get($map: $fonts, $key: archivo);
     &>strong{
         @extend .archivo-header;
         @include facilities-header-text();
+        color: #777777;
     }
 
     &>h3{
         @include facilities-standard();
         @include facilities-header-text(56px, 400, 60px, -1.2000000476837158px);
-        color: white;
+        color: black;
     }
 
     &__feature{

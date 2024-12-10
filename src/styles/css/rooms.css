@@ -7,7 +7,7 @@ Error: Undefined variable: "$desktop-size".
 3:         &__swiper{
 4:             padding-inline: $desktop-sections-padding;
 5:         }
-6:     }
+6: 
 
 Backtrace:
 scss/rooms.scss:1
@@ -60,4 +60,4 @@ scss/rooms.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$desktop-size\".\A         on line 1 of scss/rooms.scss\A \A 1: @media(min-width: $desktop-size){\A 2:     #rooms{\A 3:         &__swiper{\A 4:             padding-inline: $desktop-sections-padding;\A 5:         }\A 6:     }"; }
+  content: "Error: Undefined variable: \"$desktop-size\".\A         on line 1 of scss/rooms.scss\A \A 1: @media(min-width: $desktop-size){\A 2:     #rooms{\A 3:         &__swiper{\A 4:             padding-inline: $desktop-sections-padding;\A 5:         }\A 6: "; }
