@@ -89,7 +89,7 @@ main {
   color: #222222;
   font-weight: 400; }
 
-.roboto-text, .room__description__text > p, #footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, #about__counter__facts__fact > section > span, .rooms-block > .room .room__description > p {
+.roboto-text, .room__description__text > p, #footer__policy, .home__about__info > article > section > p, .home__food-menu__food__info > p, #about__counter__facts__fact > section > span, .rooms-block > article .room__description > p {
   font-family: "Roboto";
   color: #222222;
   font-size: 14px;
@@ -237,8 +237,7 @@ main {
     margin-top: -3.4rem;
     position: relative;
     z-index: 2;
-    max-width: 20rem;
-    margin-inline: auto; }
+    max-width: 20rem; }
   .room__description {
     margin-top: -2.6rem;
     z-index: 3;
@@ -436,7 +435,7 @@ main {
     margin-top: 0; }
     .nav-pagnum > .swiper-button-prev::after, .nav-pagnum > .swiper-button-next::after, .nav-pagnum > .swiper-pagination::after {
       font-size: 150%; }
-  .nav-pagnum > #rooms_swiper-pagination {
+  .nav-pagnum > #rooms__swiper-pagination {
     bottom: 0; }
   .nav-pagnum .swiper-pagination-bullet {
     font-family: "Oswald";
@@ -465,7 +464,11 @@ main {
     right: 20rem; }
 
   .swiper-button-prev.--custom {
-    left: 20rem; } }
+    left: 20rem; }
+
+  .nav-pagnum {
+    margin: auto;
+    max-width: 410px; } }
 .header {
   position: fixed;
   max-height: 6.5rem;
@@ -609,21 +612,23 @@ main {
   letter-spacing: -0.47999998927116394px; }
 
 @media (min-width: 1000px) {
-  #footer__main {
-    flex-direction: row;
-    margin: auto;
-    padding: 6rem 23rem; }
-    #footer__main__first {
-      max-width: 16.875rem; }
-    #footer__main__services {
-      max-width: 33rem;
-      padding-left: 2rem; }
-      #footer__main__services > section > span {
-        padding-right: 7rem; }
-  #footer__policy {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-inline: 23rem; } }
+  #footer {
+    margin-top: 2rem; }
+    #footer__main {
+      flex-direction: row;
+      margin: auto;
+      padding: 6rem 23rem; }
+      #footer__main__first {
+        max-width: 16.875rem; }
+      #footer__main__services {
+        max-width: 33rem;
+        padding-left: 2rem; }
+        #footer__main__services > section > span {
+          padding-right: 7rem; }
+    #footer__policy {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-inline: 23rem; } }
 .facilities {
   padding: 3rem 1rem; }
   .facilities > strong {
@@ -1122,9 +1127,9 @@ main {
 #rooms__swiper .room {
   margin: 1.25rem; }
 
-.rooms-block > .room .room__img {
+.rooms-block > article .room__img {
   max-height: 14.125rem; }
-.rooms-block > .room .room__description {
+.rooms-block > article .room__description {
   z-index: 3;
   background-color: white;
   width: 80%;
@@ -1134,51 +1139,82 @@ main {
   padding-block: 1.6rem;
   margin-inline: auto;
   max-width: 55rem; }
-  .rooms-block > .room .room__description > h4 {
+  .rooms-block > article .room__description > h4 {
     font-family: "Old Standard TT";
     color: black;
     font-size: 28px;
     font-weight: 400;
     line-height: 36px;
     letter-spacing: -1.2000000476837158px; }
-  .rooms-block > .room .room__description > p {
+  .rooms-block > article .room__description > p {
     line-height: 24px;
     text-align: center; }
-.rooms-block > .room .room__price {
+.rooms-block > article .room__price {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  color: #BEAD8E;
-  font-family: "Archivo";
-  font-weight: 700;
-  line-height: 43px;
-  text-align: center; }
-  .rooms-block > .room .room__price__number {
-    font-size: 23px;
-    line-height: 25.02px; }
-  .rooms-block > .room .room__price__night {
-    font-size: 11px;
-    line-height: 11.97px; }
-  .rooms-block > .room .room__price__book {
+  font-weight: 700; }
+  .rooms-block > article .room__price__rate {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #BEAD8E;
+    font-family: "Archivo";
+    line-height: 43px;
+    text-align: center; }
+    .rooms-block > article .room__price__rate__number {
+      font-size: 23px;
+      line-height: 25.02px; }
+    .rooms-block > article .room__price__rate__night {
+      font-size: 11px;
+      line-height: 11.97px; }
+  .rooms-block > article .room__price > hr {
+    display: none; }
+  .rooms-block > article .room__price__book {
     margin-left: 1rem;
     font-family: "Archivo";
     font-size: 16px;
+    font-weight: 700;
     line-height: 17.41px;
     color: #BDBDBD; }
 
 @media (min-width: 1000px) {
-  #rooms__swiper {
-    padding-inline: 23.125rem; }
   #rooms-block {
     display: flex; }
 
-  .rooms-block > article {
-    display: flex;
-    flex-direction: row; }
-    .rooms-block > article > .room__description {
+  .rooms-block {
+    margin-inline: 23.125rem; }
+    .rooms-block > article {
       display: flex;
-      flex-direction: column; } }
+      flex-direction: row;
+      gap: 2.5rem; }
+      .rooms-block > article .room__img {
+        max-width: 29.375rem;
+        max-height: 19.0625rem; }
+      .rooms-block > article .room__description {
+        display: flex;
+        flex-direction: column; }
+        .rooms-block > article .room__description > p {
+          text-align: start; }
+      .rooms-block > article .room__price {
+        flex-direction: column;
+        gap: 1rem;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none; }
+        .rooms-block > article .room__price__rate {
+          display: flex;
+          flex-direction: row; }
+          .rooms-block > article .room__price__rate__number {
+            font-size: 40px;
+            line-height: 43.52px;
+            text-align: right; }
+          .rooms-block > article .room__price__rate__night {
+            font-size: 16px;
+            text-align: right; }
+        .rooms-block > article .room__price > hr {
+          display: block;
+          width: 60px; } }
 .room-details {
   padding: 2rem 1rem;
   display: flex;

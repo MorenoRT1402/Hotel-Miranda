@@ -7,7 +7,7 @@
 }
 
 .rooms-block{
-    &>.room{
+    &>article{
         & .room{
 
             &__img{
@@ -44,31 +44,43 @@
             }
 
             &__price{
-
                 display: flex;
                 flex-direction: row;
-                justify-content: center;
                 align-items: center;
-                color: map-get($map: $theme-colors, $key: tertiary);
-    
-                font-family: $archivo-font;
                 font-weight: 700;
-                line-height: 43px;
-                text-align: center;
 
-                &__number{
-                    font-size: 23px;
-                    line-height: 25.02px; 
+                &__rate{
+
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    color: map-get($map: $theme-colors, $key: tertiary);
+        
+                    font-family: $archivo-font;
+                    line-height: 43px;
+                    text-align: center;
+    
+                    &__number{
+                        font-size: 23px;
+                        line-height: 25.02px; 
+                    }
+                    &__night{
+                        font-size: 11px;
+                        line-height: 11.97px;
+                    }
+
                 }
-                &__night{
-                    font-size: 11px;
-                    line-height: 11.97px;
+
+                &>hr{
+                    display: none;
                 }
 
                 &__book{
                     margin-left: 1rem;
                     font-family: $archivo-font;
                     font-size: 16px;
+                    font-weight: 700;
                     line-height: 17.41px;
                     color: #BDBDBD;
                 }
@@ -80,23 +92,63 @@
 
 @media(min-width: $desktop-size){
     #rooms{
-        &__swiper{
-            padding-inline: $desktop-sections-padding;
-        }
-
         &-block{
             display: flex;
         }
     }
 
     .rooms-block{
+        margin-inline: 23.125rem;
+        
         &>article{
             display: flex;
             flex-direction: row;
+            gap: 2.5rem;
 
-            &>.room__description{
-                display: flex;
-                flex-direction: column;
+            & .room{
+                &__img{
+                    max-width: 29.375rem;
+                    max-height: 19.0625rem;
+                }
+                            
+                &__description{
+                    display: flex;
+                    flex-direction: column;
+
+                    &>p{
+                        text-align: start;
+                    }
+                }
+
+                &__price{
+                    flex-direction: column;
+                    gap: 1rem;
+                    text-underline-position: from-font;
+                    text-decoration-skip-ink: none;
+                    
+                    &__rate{
+                        display: flex;
+                        flex-direction: row;
+
+                        &__number{
+                            font-size: 40px;
+                            line-height: 43.52px;
+                            text-align: right;
+                        }
+    
+                        &__night{
+                            font-size: 16px;
+                            text-align: right;
+                        }
+
+                    }
+
+                    &>hr{
+                        display: block;
+                        width: 60px;
+                    }
+
+                }
             }
         }
     }
