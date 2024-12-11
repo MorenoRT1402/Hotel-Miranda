@@ -1,3 +1,83 @@
+#rooms{
+    &__swiper{
+        & .room{
+            margin: 1.25rem;
+        }
+    }
+}
+
+.rooms-block{
+    &>.room{
+        & .room{
+
+            &__img{
+                max-height: 14.125rem;
+            }
+
+            &__description{
+                $padding: 1.6rem;
+        
+                z-index: 3;
+                background-color: white;
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                gap: 1rem;
+                padding-block: $padding;
+                margin-inline: auto;
+                max-width: 55rem;
+        
+                &>h4{
+                    font-family: $old-standard-font;
+                    color: black;
+                    font-size: 28px;
+                    font-weight: 400;
+                    line-height: 36px;
+                    letter-spacing: -1.2000000476837158px;
+                }
+        
+                &>p{
+                    @extend .roboto-text;
+                    line-height: 24px;
+                    text-align: center;
+                }
+            }
+
+            &__price{
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                color: map-get($map: $theme-colors, $key: tertiary);
+    
+                font-family: $archivo-font;
+                font-weight: 700;
+                line-height: 43px;
+                text-align: center;
+
+                &__number{
+                    font-size: 23px;
+                    line-height: 25.02px; 
+                }
+                &__night{
+                    font-size: 11px;
+                    line-height: 11.97px;
+                }
+
+                &__book{
+                    margin-left: 1rem;
+                    font-family: $archivo-font;
+                    font-size: 16px;
+                    line-height: 17.41px;
+                    color: #BDBDBD;
+                }
+            }
+
+        }
+    }
+}
+
 @media(min-width: $desktop-size){
     #rooms{
         &__swiper{
@@ -6,6 +86,18 @@
 
         &-block{
             display: flex;
+        }
+    }
+
+    .rooms-block{
+        &>article{
+            display: flex;
+            flex-direction: row;
+
+            &>.room__description{
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }
