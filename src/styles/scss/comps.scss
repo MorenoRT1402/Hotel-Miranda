@@ -1,3 +1,5 @@
+// Refactor this in order to make smaller
+
 $archivo-font: map-get($map: $fonts, $key: archivo);
 $old-standard-font: map-get($map: $fonts, $key: old-standard); 
 $font-roboto: map-get($map: $fonts, $key: roboto);
@@ -119,10 +121,25 @@ $gap-value: 1rem;
     }
 
     &__services{
-        margin-top: -3.4rem;
-        position: relative;
+        width: 100%;
+        margin-bottom: -2.3rem;
         z-index: 2;
-        max-width: 20rem;
+        max-width: 16rem;
+        margin-inline: auto;
+        background-color: map-get($map: $theme-colors, $key: main);
+        padding: 0.75rem 1rem;
+
+        &__div{
+            display: flex;
+            justify-content: space-between;
+            margin: auto;
+
+            &__amenity{
+                flex: 1;
+                aspect-ratio: 1;
+                max-width: 1rem;
+            }
+        }
     }
 
     &__description{
@@ -288,7 +305,7 @@ $gap-value: 1rem;
     display: flex;
     align-items: start;
     gap: .5rem;
-    border-bottom: 2px solid map-get($map: $theme-colors, $key: tertiary);
+    border-bottom: 0.125rem solid map-get($map: $theme-colors, $key: tertiary);
     padding-bottom: .5rem;
     
     &>input, &>textarea{
@@ -326,6 +343,8 @@ $gap-value: 1rem;
     }
 }
 
+// ================================================== Desktop ======================================================
+
 @media (min-width: $desktop-size){
     .section-intro{
         padding-top: 15rem;
@@ -349,29 +368,41 @@ $gap-value: 1rem;
         }
     }
 
-    .room__description{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-
-        &__text{
-            text-align: left;
-            width: 50%;
-            display: flex;
-            flex-direction: column;
-
-            &>h{
-                font-size: 36px;
-            }
-
-            &>p{
-                text-align: left;
-                font-size: 14px;
+    .room{
+        &__services{
+            max-width: 19.375rem;
+            padding-block: 0.8125rem;
+            margin-bottom: -2.49rem;
+            
+            &__div__amenity{
+                max-width: 1.5rem;
             }
         }
 
-        &__price__number{
-            font-size: 40px;
+        &__description{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+    
+            &__text{
+                text-align: left;
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+    
+                &>h{
+                    font-size: 36px;
+                }
+    
+                &>p{
+                    text-align: left;
+                    font-size: 14px;
+                }
+            }
+    
+            &__price__number{
+                font-size: 40px;
+            }
         }
     }
 }

@@ -1,16 +1,18 @@
 /*
 Error: Undefined variable: "$fonts".
-        on line 1 of scss/comps.scss
+        on line 3 of scss/comps.scss
 
-1: $archivo-font: map-get($map: $fonts, $key: archivo);
-2: $old-standard-font: map-get($map: $fonts, $key: old-standard); 
-3: $font-roboto: map-get($map: $fonts, $key: roboto);
-4: 
-5: $lateral-padding: 1.2rem;
+1: // Refactor this in order to make smaller
+2: 
+3: $archivo-font: map-get($map: $fonts, $key: archivo);
+4: $old-standard-font: map-get($map: $fonts, $key: old-standard); 
+5: $font-roboto: map-get($map: $fonts, $key: roboto);
 6: 
+7: $lateral-padding: 1.2rem;
+8: 
 
 Backtrace:
-scss/comps.scss:1
+scss/comps.scss:3
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:182:in `perform_arg'
@@ -65,4 +67,4 @@ scss/comps.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$fonts\".\A         on line 1 of scss/comps.scss\A \A 1: $archivo-font: map-get($map: $fonts, $key: archivo);\A 2: $old-standard-font: map-get($map: $fonts, $key: old-standard); \A 3: $font-roboto: map-get($map: $fonts, $key: roboto);\A 4: \A 5: $lateral-padding: 1.2rem;\A 6: "; }
+  content: "Error: Undefined variable: \"$fonts\".\A         on line 3 of scss/comps.scss\A \A 1: // Refactor this in order to make smaller\A 2: \A 3: $archivo-font: map-get($map: $fonts, $key: archivo);\A 4: $old-standard-font: map-get($map: $fonts, $key: old-standard); \A 5: $font-roboto: map-get($map: $fonts, $key: roboto);\A 6: \A 7: $lateral-padding: 1.2rem;\A 8: "; }

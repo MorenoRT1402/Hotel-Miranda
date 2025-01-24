@@ -234,10 +234,21 @@ main {
     max-height: 100%;
     object-fit: cover; }
   .room__services {
-    margin-top: -3.4rem;
-    position: relative;
+    width: 100%;
+    margin-bottom: -2.3rem;
     z-index: 2;
-    max-width: 20rem; }
+    max-width: 16rem;
+    margin-inline: auto;
+    background-color: white;
+    padding: 0.75rem 1rem; }
+    .room__services__div {
+      display: flex;
+      justify-content: space-between;
+      margin: auto; }
+      .room__services__div__amenity {
+        flex: 1;
+        aspect-ratio: 1;
+        max-width: 1rem; }
   .room__description {
     margin-top: -2.6rem;
     z-index: 3;
@@ -331,7 +342,7 @@ main {
   display: flex;
   align-items: start;
   gap: .5rem;
-  border-bottom: 2px solid #BEAD8E;
+  border-bottom: 0.125rem solid #BEAD8E;
   padding-bottom: .5rem; }
   .input > input, .availability-form > div > div > input, .input.--variant > input, .availability-form.--variant > div > div > input, #blog__form > div > input, .input > textarea, .availability-form > div > div > textarea, .input.--variant > textarea, .availability-form.--variant > div > div > textarea, #blog__form > div > textarea {
     flex: 1;
@@ -370,6 +381,12 @@ main {
     .availability-form > button {
       margin-inline: auto 7%; }
 
+  .room__services {
+    max-width: 19.375rem;
+    padding-block: 0.8125rem;
+    margin-bottom: -2.49rem; }
+    .room__services__div__amenity {
+      max-width: 1.5rem; }
   .room__description {
     display: flex;
     flex-direction: row;
