@@ -121,13 +121,21 @@ $gap-value: 1rem;
     }
 
     &__services{
+        position: relative;
         width: 100%;
-        margin-bottom: -2.3rem;
         z-index: 2;
         max-width: 16rem;
         margin-inline: auto;
         background-color: map-get($map: $theme-colors, $key: main);
         padding: 0.75rem 1rem;
+        
+        &.--up{
+            top: 2.3rem;
+        }
+
+        &.--down{
+            bottom: 3rem;
+        }
 
         &__div{
             display: flex;

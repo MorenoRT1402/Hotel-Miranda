@@ -234,13 +234,17 @@ main {
     max-height: 100%;
     object-fit: cover; }
   .room__services {
+    position: relative;
     width: 100%;
-    margin-bottom: -2.3rem;
     z-index: 2;
     max-width: 16rem;
     margin-inline: auto;
     background-color: white;
     padding: 0.75rem 1rem; }
+    .room__services.--up {
+      top: 2.3rem; }
+    .room__services.--down {
+      bottom: 3rem; }
     .room__services__div {
       display: flex;
       justify-content: space-between;
