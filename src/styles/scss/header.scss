@@ -98,9 +98,9 @@ $font-archivo: map-get($map: $fonts, $key: archivo);
 
             position: absolute;
             top: 19%;
-            left: 27.2%;
+            left: min(37.2%, 29rem);
             margin-top: 3.2rem;
-            margin-left: 3rem;
+            background: none;
 
             &>a{
                 font-size: 16px;
